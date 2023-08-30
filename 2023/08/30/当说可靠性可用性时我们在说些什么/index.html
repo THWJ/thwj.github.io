@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="/lib/@fortawesome/fontawesome-free/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="/lib/animate.css/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.jerryking.top","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.17.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="本文为个人观点，不代表本人前任和现任雇主。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="当说可靠性可用性时我们在说些什么">
+<meta property="og:url" content="https://blog.jerryking.top/2023/08/30/%E5%BD%93%E8%AF%B4%E5%8F%AF%E9%9D%A0%E6%80%A7%E5%8F%AF%E7%94%A8%E6%80%A7%E6%97%B6%E6%88%91%E4%BB%AC%E5%9C%A8%E8%AF%B4%E4%BA%9B%E4%BB%80%E4%B9%88/index.html">
+<meta property="og:site_name" content="Jerome&#39;s Blog">
+<meta property="og:description" content="本文为个人观点，不代表本人前任和现任雇主。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://pic.imgdb.cn/item/64ed654e661c6c8e540684c9.png">
+<meta property="article:published_time" content="2023-08-30T00:53:40.000Z">
+<meta property="article:modified_time" content="2023-08-30T00:54:11.953Z">
+<meta property="article:author" content="Jerome">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic.imgdb.cn/item/64ed654e661c6c8e540684c9.png">
+
+
+<link rel="canonical" href="https://blog.jerryking.top/2023/08/30/%E5%BD%93%E8%AF%B4%E5%8F%AF%E9%9D%A0%E6%80%A7%E5%8F%AF%E7%94%A8%E6%80%A7%E6%97%B6%E6%88%91%E4%BB%AC%E5%9C%A8%E8%AF%B4%E4%BA%9B%E4%BB%80%E4%B9%88/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://blog.jerryking.top/2023/08/30/%E5%BD%93%E8%AF%B4%E5%8F%AF%E9%9D%A0%E6%80%A7%E5%8F%AF%E7%94%A8%E6%80%A7%E6%97%B6%E6%88%91%E4%BB%AC%E5%9C%A8%E8%AF%B4%E4%BA%9B%E4%BB%80%E4%B9%88/","path":"2023/08/30/当说可靠性可用性时我们在说些什么/","title":"当说可靠性可用性时我们在说些什么"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>当说可靠性可用性时我们在说些什么 | Jerome's Blog</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Jerome's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Jerome的日常随想</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83"><span class="nav-number">1.</span> <span class="nav-text">参考</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B3%A8%E9%87%8A"><span class="nav-number">2.</span> <span class="nav-text">注释</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Jerome"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Jerome</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.jerryking.top/2023/08/30/%E5%BD%93%E8%AF%B4%E5%8F%AF%E9%9D%A0%E6%80%A7%E5%8F%AF%E7%94%A8%E6%80%A7%E6%97%B6%E6%88%91%E4%BB%AC%E5%9C%A8%E8%AF%B4%E4%BA%9B%E4%BB%80%E4%B9%88/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Jerome">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jerome's Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="当说可靠性可用性时我们在说些什么 | Jerome's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          当说可靠性可用性时我们在说些什么
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2023-08-30 08:53:40 / 修改时间：08:54:11" itemprop="dateCreated datePublished" datetime="2023-08-30T08:53:40+08:00">2023-08-30</time>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>2.6k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>9 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>本文为个人观点，不代表本人前任和现任雇主。</p>
+<span id="more"></span>
+<p>自从进入到金融核心业务系统这个领域，大家每天都在谈可用性和可靠性，但是这两个概念很容易混淆，并且IT有很多细分领域，不同细分领域中，这两个概念的含义和应用还略有差别。</p>
+<p>先看定义。在查找这两个概念的权威定义时，我发现wiki没有对独立的Reliability（可靠性）进行定义，反而是列了一个列表，链接到：Data reliability、Reliability（computer networking）、Reliability（semiconductor）。这恰恰也是本文想要表达的核心观点之一：<strong>可靠性在不同的IT领域的定义是有显著差别的。</strong> 就普通人的直觉来理解，可靠性不就是一个东西爱不爱坏吗？但是爱不爱坏一般说的硬件设备（比如电视机），并且是一个主观感受。在专业领域，如果要控制一个系统的属性，就必须量化他。另外，使用者往往还关注整个系统，例如软件系统、软件+硬件组成的系统、软件+硬件+网络组成的系统以及非常重要的数据系统（同样由软硬件和网络一起构成，但是有点特殊）的可靠性。因此我们在这里不定义可靠性，等下谈到具体场景时再进行解释。</p>
+<p>可用性的定义就相对来说统一一些，有个简单的定义公式：可用性 &#x3D; 系统运行时间 (uptime)&#x2F; 系统运行时间 + 系统故障时间(downtime)。通俗的打个比方，如果家里电视机正常用了1000个小时，故障了，然后花了24个小时修好了，则其可用性可以计算为：电视机可用性 &#x3D; 1000&#x2F;（1000+24） &#x3D; 97.65625%。如果售后说要一个月才能修好，那么可用性就变成了58.13%。当然这是开玩笑，消费领域其实很少谈可用性。专业领域也不能靠售后维修来保证可用性。专业领域通常靠冗余设计来保证可用性，不恰当的比方一下就是，家里放两台电视机，轮流使用，如果看着看着，一台电视机坏掉了，那就马上切换到另外一台，切换时间可能是1分钟，则家里的看电视系统（双机系统）的可用性就提升到：1000 x 60 &#x2F; (1000X60 + 1) &#x3D; 0.999983（99.9983%），哇，变4个9了，爽不爽？</p>
+<p>有没有发现有一个地方非常重要？那就是系统切换时间，也就是常用的专业术语：RTO（Recovery Time Objective）。这个术语的字面意思是系统设计从故障中恢复所需时间目标。在IT领域，故障恢复通常都是靠主备切换，所以有时也称之为切换时间。不过，如果是软件崩溃了，重启一下恢复系统也不是不可以，如果采用这种策略，那么RTO就是重启时间。</p>
+<p>业内为了保证系统的可用性，是非常极致的。我们刚谈到使用备用设备来提升系统的可用性，这是设备级的，那么如果设备所在的机房故障了呢？设备机房所在的城市大规模电力或者网络故障了呢？为了解决这种极端情况下的整个系统服务的可用性，两地三中心甚至四地五中心的方案也都是有的。</p>
+<p>我们在文章的开头谈到数据系统非常特殊，方才我们举两台电视机来增加系统可用性时，我们没有考虑两个问题：1、切换到备用电视机后，还需要切换到刚才看的频道，两台电视机如果不能同步，还需要手工去转台；2、在这个切换的时间内，这个频道播出的内容就看不到了。对看电视的人来说这通常是无关紧要的，但是专业领域，尤其是金融领域，丢掉了数据甚至比不能提供服务还严重。这里就引出另外一个指标：RPO（Recovery Point Objective），字面意思是：恢复点目标。通俗来说就是系统设计从故障中恢复会丢失多长时间的数据的目标。</p>
+<p>这里我们就涉及到数据可靠性（data reliability）的问题了。本文开头谈到可靠性在不同的IT子领域有很大的不同，我们以电视机举例时，实际上有个硬件可靠性的指标，这台电视机的可靠性是可以量化的：MTBF（Mean time Between Failures），字面意思是故障间平均时间，其实可以简单理解为多长时间不坏，如果一台电视机看了1000个小时发生故障，则其可靠性指标MTBF就是1000小时。不过单一设备的指标有较大的随机性，所以硬件厂商通常使用Mean time（统计平均时间）来表明某个型号的设备的可靠性。<br><img src="https://pic.imgdb.cn/item/64ed654e661c6c8e540684c9.png"><br>当谈论数据可靠性时，字面意思是数据不丢失，但是专业领域还有较为深层的含义。首先是数据被存储，通常实时数据是在内存中的，而内存是易失的，重要的数据必须尽快写入到磁盘中，有个专业术语叫：持久化。写内存和写磁盘是有时间差的，这里面有大量的工作要做，有不同目标之间的权衡。数据持久化是最基本的要求，数据可靠性更多的是跟数据备份和数据一致性联系起来。数据一致性本身又有多方面的内涵，例如缓存和原始数据的一致性等，这里我们只谈主备数据的一致性问题。当主备切换的时候，主备系统中的数据是不是一样的？如果不一样，有多大的差距？这就是RPO衡量的指标。</p>
+<p>其实，目前在实际运作中，最多谈论可用性和可靠性的就是数据领域。廉价X86服务的普及，显著降低了单机的成本，大量免费的或低成本的ha（high available高可用）方案也唾手可得。无状态的服务【注1】的高可用基本不需要应用开发者操心。无状态服务随意启停，并行多个实例等可以有效的保证系统服务的可用性。数据的可用性和可靠性才是一个系统设计实现的难点所在。设备有价，数据无价在普通数码爱好者中都已经形成共识。想想是手机坏了对人的影响大，还是手机中的数据（照片、联系人）丢失对人的影响大？专业领域更是如此。</p>
+<p>说回RPO，其实RPO是一种权衡。由于数据的重要性，以及业内对数据存储、同步、备份方案的多年的追求【注2】，真正意义上的数据丢失挺难也很少见，一般都是运维执行了错误的指令。那么为什么还经常谈论RPO呢？主要是性能和数据一致性之间的平衡。如果强调数据的可靠性，则主备之间益使用同步同步方案，也就是说主机需要等到备机回复数据已经持久化后，才继续往下面的流程走，这显然会导致主机等待，系统处理的时延上升，但可以做到RPO&#x3D;0；如果强调系统的性能，则主备之间益采用异步同步方案，既主机发数据给备机后直接继续处理，不必等待备机返回处理结果，但是当主机故障后，不能保证备机数据与主机完全一致，RPO不为零。</p>
+<p>基于上述认知，再来聊聊几个常见的容易混淆概念的地方。</p>
+<ul>
+<li>软件系统的可靠性：软件系统的可靠性跟硬件完全不同，按照wiki的说法（参考3）：“软件系统不会因为磨损而失败（Software does not fail due to ware out)，所以很难有MTBF这种指标。根据参考3，只能通过一些模型来预测，而非像硬件那样基于测试数据来统计。有时谈论软件可靠性时，可能是在谈论软件质量（bug的多少，不可能没有；测试的完备性等）；软件设计的鲁棒性如何；软件的容错设计（对硬件的容错）</li>
+<li>系统可用性：系统可用性是由软件系统的容错设计和硬件系统的可靠性共同决定的。假设硬件的可靠性指标是8760小时（MTBF）也就是8760小时（1年）硬件发生一次故障，假设RTO&#x3D;1分钟，则系统可用性可以做到6个9（99.9998%）【注3】</li>
+<li>Raid其实更多是一种可用性方案，而非可靠性方案，raid重建失败的案例常有所闻，所以即使使用了raid，也要备份数据。【注4】</li>
+</ul>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ol>
+<li><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Reliability">Reliability - Wikipedia</a></li>
+<li><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Availability">Availability - Wikipedia</a></li>
+<li><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/List_of_software_reliability_models">List of software reliability models - Wikipedia </a></li>
+</ol>
+<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><ol>
+<li>所谓的无状态服务，简单理解就是这个服务（软件进程）不需要存储用户之前的指令及其带来的内存数据变化，其无论运行多久，服务多少用户，其内存状态都是一样的。现在系统设计者普遍倾向于对系统进行分离设计，用专用的数据服务（例如redis）来保存状态数据，尽可能的将服务进程设计为无状态服务从而简化应用开发者的开发工作。</li>
+<li>硬盘本身的可靠性设计；数据库wal（redo、undo）；数据库主备同步方案、各种文件备份方案、字节级复制方案。</li>
+<li>这个算法是示意算法，很简陋，不一定对，真实计算可能比较复杂，可能还要叠加网络设备的可靠性等</li>
+<li>Raid0是性能方案；Raid1和Raid5是高可用方案，当然本身也产生了数据备份的效果，但是鉴于Raid重建的失败率，还是不能拿Raid当唯一的数据备份使用，必须额外备份。</li>
+</ol>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2023/08/27/%E5%85%B3%E4%BA%8E%E4%BD%9B%E5%92%8C%E4%BD%9B%E6%95%99/" rel="prev" title="关于佛和佛教">
+                  <i class="fa fa-chevron-left"></i> 关于佛和佛教
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Jerome</span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>站点总字数：</span>
+    <span title="站点总字数">17k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span>站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">57 分钟</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="/lib/animejs/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+</body>
+</html>
