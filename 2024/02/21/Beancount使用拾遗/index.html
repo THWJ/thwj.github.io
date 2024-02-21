@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="/lib/@fortawesome/fontawesome-free/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="/lib/animate.css/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.jerryking.top","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.17.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="Knowledge comes, but wisdom lingers. It may not be difficult to store up in the mind a vast quantity of facts within a comparatively short time, but the ability to form judgments requires the severe">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Beancount使用拾遗">
+<meta property="og:url" content="https://blog.jerryking.top/2024/02/21/Beancount%E4%BD%BF%E7%94%A8%E6%8B%BE%E9%81%97/index.html">
+<meta property="og:site_name" content="Jerome&#39;s Blog">
+<meta property="og:description" content="Knowledge comes, but wisdom lingers. It may not be difficult to store up in the mind a vast quantity of facts within a comparatively short time, but the ability to form judgments requires the severe">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-02-21T03:53:51.000Z">
+<meta property="article:modified_time" content="2024-02-21T03:54:01.602Z">
+<meta property="article:author" content="Jerome">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://blog.jerryking.top/2024/02/21/Beancount%E4%BD%BF%E7%94%A8%E6%8B%BE%E9%81%97/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://blog.jerryking.top/2024/02/21/Beancount%E4%BD%BF%E7%94%A8%E6%8B%BE%E9%81%97/","path":"2024/02/21/Beancount使用拾遗/","title":"Beancount使用拾遗"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Beancount使用拾遗 | Jerome's Blog</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Jerome's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Jerome的日常随想</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%83%8C%E6%99%AF"><span class="nav-number">1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Beancount%E7%AE%80%E4%BB%8B"><span class="nav-number">2.</span> <span class="nav-text">Beancount简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E4%BA%9B%E6%8B%BE%E9%81%97"><span class="nav-number">3.</span> <span class="nav-text">一些拾遗</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%AE%E9%A2%98"><span class="nav-number">3.1.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E4%BD%8D"><span class="nav-number">3.2.</span> <span class="nav-text">定位</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Beancount%E5%AF%BC%E5%85%A5%E8%B4%A6%E5%8D%95%E7%9A%84%E6%B5%81%E7%A8%8B"><span class="nav-number">3.2.1.</span> <span class="nav-text">Beancount导入账单的流程</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="nav-number">3.3.</span> <span class="nav-text">解决方案</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-number">4.</span> <span class="nav-text">其他</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83"><span class="nav-number">5.</span> <span class="nav-text">参考</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Jerome"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Jerome</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">23</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.jerryking.top/2024/02/21/Beancount%E4%BD%BF%E7%94%A8%E6%8B%BE%E9%81%97/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Jerome">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jerome's Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Beancount使用拾遗 | Jerome's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Beancount使用拾遗
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2024-02-21 11:53:51 / 修改时间：11:54:01" itemprop="dateCreated datePublished" datetime="2024-02-21T11:53:51+08:00">2024-02-21</time>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>1.4k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>5 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><blockquote>
+<p>Knowledge comes, but wisdom lingers. It may not be difficult to store up in the mind a vast quantity of facts within a comparatively short time, but the ability to form judgments requires the severe discipline of hard work and the tempering heat of experience and maturity.<br>— <cite>Calvin Coolidge</cite></p>
+</blockquote>
+<span id="more"></span>
+<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>因为近期可能要处理一些会计工作，就了解了一下简单的会计知识。发现了一个用于复式记账的软件：Beancount。这个软件比较适合程序员群体用来作为个人的会计软件。我虽然不是程序员，但是因为比较喜欢命令行、纯文本、自动化、自主可控、隐私安全等方面，所以也对这种记账工具产生了兴趣，决定试验一下。</p>
+<h2 id="Beancount简介"><a href="#Beancount简介" class="headerlink" title="Beancount简介"></a>Beancount简介</h2><p>Beancount的简介可以参考[1]、参考[2]文章的内容。我的理解是一套复式记账的方法以及配套的一系列自动化和展示工具。</p>
+<p>Beancount的核心是一套用纯文本，按照Beancount设定的规则进行记账的方法。好处是不依赖任何平台和软件，没有隐私泄露的问题和平台绑定的问题，可以使用程序员源代码管理的那一套工具（git）来进行账本的管理。缺点是有点门槛，使用起来可能没有一些记账app那么方便。</p>
+<p>不过有价值的工作总是有门槛的，复式记账法有助于培养一个人的会计思维，对自己的财务有更深刻的认识，还是值得的。</p>
+<h2 id="一些拾遗"><a href="#一些拾遗" class="headerlink" title="一些拾遗"></a>一些拾遗</h2><p>关于Beancount的使用方法，文末参考部分给出的内容非常详细了，不再赘述。</p>
+<p>不过我在导入微信账单的时候，使用参考[6]参考[8]提供的代码都有问题，研究了很久，也没有找到答案，并且网上也没有梳理import流程的文章，导致定位问题也有点困难。可能对程序员很简单，但是对非程序员来说有点难度。我经过反复思考和测试，有一点收获，在这里分享一下。</p>
+<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>使用参考[6] 或参考[8] 提供的代码，根据指示，用bean-extract命令：<code>bean-extract config.py XXXX.csv test.bean</code>, 来从微信账单生成bean交易账本文件，执行成功，但是生成的test.bean文件只有28个字节，内容是空的，没有实质内容。 </p>
+<h3 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h3><p>bean-extract是个exe文件，不知道如何调试，着急了很久，后来想到config.py 和CSVImporter.py 文件都是标准的python代码，可以在其中加print来调试，通过一步步的调试，发现了通过bean工具进行账单import的流程。</p>
+<h4 id="Beancount导入账单的流程"><a href="#Beancount导入账单的流程" class="headerlink" title="Beancount导入账单的流程"></a>Beancount导入账单的流程</h4><p>bean-extract命令其实只是一个入口，和关于bean文件处理的库函数。对输入文件（原始账单文件）的解析来自类Importer。config文件中定义了两个importer：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CONFIG = [wechat_importer, alipay_importer]</span><br></pre></td></tr></table></figure>
+
+<p>通过print调试发现，无论是使用bean-identify，还是bean-extract命令，都会调用config.py文件，让后生成config.py文件中CONFIG 列表中引用的这两个importer对象。然后都会调用 identify函数，这个函数会判断文件的类型是否是text&#x2F;csv，以及文件的前缀是否是对象配置中的前缀。</p>
+<p>所以导入的问题，就在于win下下载的微信支付清单是<code>application/vnd.ms-excel</code> 类型，而不是代码中要求的<code>text/csv</code>类型，所以直接退出了。而生成的支付宝对象，在这里检测到前缀与实际文件不同，也退出了。</p>
+<p>总结一下bean-extract（identify）的流程：首先根据config.py文件中的CONFIG数组来生成importer对象，对象的参数在config.py文件中，对象的实现在CSVImporter.py中。相关对象生成后，通过Idengtify函数检查文件是否满足本对象的要求（文件类型和文件名前缀），再调用extract函数生成交易文件。</p>
+<h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><p>定位到了问题，解决方案就很简单。修改Importer类中判断文件类型的代码，通过”application&#x2F;vnd.ms-excel”类型的文件。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#if file.mimetype() != &quot;text/csv&quot;:</span><br><span class="line">if file.mimetype() not in [&quot;text/csv&quot;, &quot;application/vnd.ms-excel&quot;]:</span><br><span class="line">            print(&quot;Wrong file type&quot;)</span><br><span class="line">            return False</span><br></pre></td></tr></table></figure>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>本次问题的定位和处理，是在ChatGPT的帮助下完成的。因为作者在编写python代码时，用了不少高级的属性，我仅有的一点python编程知识无法理解，但是将代码丢给ChatGPT后，基本可以得到很清晰的解释，在此表示感谢。</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>[1]  <a target="_blank" rel="noopener" href="https://www.skyue.com/19101819.html">记账神器beancount - 拾月</a>  入门文章，介绍的很详细，给出了账户、拆分账本及账本结构的示例，基本够用了<br>[2]  <a target="_blank" rel="noopener" href="https://byvoid.com/zhs/blog/beancount-bookkeeping-1/">Beancount复式记账（一）：为什么</a> 系列文章，值得参考<br>[3]  <a target="_blank" rel="noopener" href="https://yishanhe.net/tags/beancount/">Shanhe Yi - 复式借贷记账法 Beancount </a> 系列文章，值得参考，包括了房产、RSU和ESPP的建模方法<br>[4]  <a target="_blank" rel="noopener" href="https://xwartz.github.io/blog/beancount-best-practice/">Beancount 最佳实践 — XWARTZ</a> 入门文章，参考<br>[5]  <a target="_blank" rel="noopener" href="https://blog.stdioa.com/2020/09/using-beancount/index.html">开始使用 Beancount | Stdio’s Blog</a> 提到了telegrambot，后续可以参考<br>[6]  <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/103705480">用于支付宝和微信账单的Beancount Importer - 知乎</a> 导入支付宝和微信账单的教程，作者提供了代码，见[7]<br>[7]  <a target="_blank" rel="noopener" href="https://github.com/Sphish/Beancount-CSVImporter">GitHub - sphish&#x2F;Beancount-CSVImporter: CSVImporter for beancount, mainly used to import transaction records of Alipay and WeChat</a> 参考[6]作者提供的importer的源码，几乎直接可用<br>[8]  <a target="_blank" rel="noopener" href="https://einverne.github.io/post/2021/02/beancount-import-bill.html">使用 Beancount 记账篇二：各类账单导入 | Verne in GitHub</a> 另外一个作者写的importer，包括了银行的、支付宝和微信的，可以参考</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/02/21/%E5%85%AC%E5%BC%80%E8%B0%B4%E8%B4%A3%EF%BC%9F-24-02-21/" rel="prev" title="公开谴责？ - 24.02.21">
+                  <i class="fa fa-chevron-left"></i> 公开谴责？ - 24.02.21
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Jerome</span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>站点总字数：</span>
+    <span title="站点总字数">48k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span>站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">2:41</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="/lib/animejs/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+</body>
+</html>
