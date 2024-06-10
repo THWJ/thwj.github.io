@@ -6,7 +6,7 @@
   <link href="https://blog.jerryking.top/atom.xml" rel="self"/>
   
   <link href="https://blog.jerryking.top/"/>
-  <updated>2024-06-10T06:36:48.516Z</updated>
+  <updated>2024-06-10T07:20:55.232Z</updated>
   <id>https://blog.jerryking.top/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>分享一个低成本软路由+Mesh Ap的组网方案</title>
-    <link href="https://blog.jerryking.top/2024/06/10/20240610-%E5%88%86%E4%BA%AB%E4%B8%80%E4%B8%AA%E5%88%86%E4%BA%AB%E4%B8%80%E4%B8%AA%E4%BD%8E%E6%88%90%E6%9C%AC%E8%BD%AF%E8%B7%AF%E7%94%B1+Mesh%20Ap%E7%9A%84%E7%BB%84%E7%BD%91%E6%96%B9%E6%A1%88/"/>
-    <id>https://blog.jerryking.top/2024/06/10/20240610-%E5%88%86%E4%BA%AB%E4%B8%80%E4%B8%AA%E5%88%86%E4%BA%AB%E4%B8%80%E4%B8%AA%E4%BD%8E%E6%88%90%E6%9C%AC%E8%BD%AF%E8%B7%AF%E7%94%B1+Mesh%20Ap%E7%9A%84%E7%BB%84%E7%BD%91%E6%96%B9%E6%A1%88/</id>
+    <title>分享一个低成本软路由加Mesh Ap的组网方案</title>
+    <link href="https://blog.jerryking.top/2024/06/10/20240610-%E5%88%86%E4%BA%AB%E4%B8%80%E4%B8%AA%E5%88%86%E4%BA%AB%E4%B8%80%E4%B8%AA%E4%BD%8E%E6%88%90%E6%9C%AC%E8%BD%AF%E8%B7%AF%E7%94%B1%E5%8A%A0Mesh%20Ap%E7%9A%84%E7%BB%84%E7%BD%91%E6%96%B9%E6%A1%88/"/>
+    <id>https://blog.jerryking.top/2024/06/10/20240610-%E5%88%86%E4%BA%AB%E4%B8%80%E4%B8%AA%E5%88%86%E4%BA%AB%E4%B8%80%E4%B8%AA%E4%BD%8E%E6%88%90%E6%9C%AC%E8%BD%AF%E8%B7%AF%E7%94%B1%E5%8A%A0Mesh%20Ap%E7%9A%84%E7%BB%84%E7%BD%91%E6%96%B9%E6%A1%88/</id>
     <published>2024-06-10T05:10:00.000Z</published>
-    <updated>2024-06-10T06:36:48.516Z</updated>
+    <updated>2024-06-10T07:20:55.232Z</updated>
     
     <content type="html"><![CDATA[<p>一个成本较低，但是兼具软路由的多种网络功能和Mesh Ap的无线漫游能力的方案。</p><span id="more"></span><h2 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h2><p>简单的家庭网络直接买可以组mesh的无线路由器就好了。例如我使用的中兴E2633，目前闲鱼80左右一个。房子小的买一个，房子大的买两个三个四个五个都可以。只要家里装修的时候预留了有线网口，就算家里是三百平的大house，每个房间丢一个也能保持全家的网络信号都很好。<br>但是像我这样家里有Nas，以及各种家庭网络服务的，就对家庭网络提出了更高的要求。 例如为了保证内外网通过域名访问家中服务一致性的需求，需要在内网做DNS劫持。 为了更好地利用IPV6直连服务等能力，同时保证内网的安全， 就需要在路由器上开通特定的iPV6的端口（没有公网IPV4iP）。 </p><h2 id="原来方案及问题"><a href="#原来方案及问题" class="headerlink" title="原来方案及问题"></a>原来方案及问题</h2><p>现在普通的无线路由器虽然大部分有mesh功能，但是很多都缺少dns劫持功能和ipv6 防火墙配置功能（只能全开或全关）。<br>一些高端的无线路由器，例如华硕的AiMesh路由好像能够满足我的需要。但是，我另一方面还希望以较低的成本解决上述需求，华硕全套方案有点贵了。<br>手上有两个之前玩儿剩下的 NewWiFi3 路由器，并且都已经刷了openWRT系统。 这个路由器路由性能不错，但是无线系统较差， 关闭WiFi，当有线路由使用很不错。 我又买了两个E2633， 专门做AP使用。<br>但是E2633正常方式接在NewWiFi3下面的话， 就会形成不同的子网。 局域网设备互相访问存在一些问题。因此，长期以来，我都是把 E2633关掉dhcp，将网线插在Lan口跟主路由的LAN口连接，当简单的AP使用。<br>这种状态下无法使用E2633的mesh功能。 需要人工切换。 经常人工切换信号，确实有点难受，因此最近花了点时间想恢复E2633的mesh功能，至于内网互通的问题，另想办法。 没想到恩山的一篇文章。 让我看到了新希望。</p><h2 id="新方案"><a href="#新方案" class="headerlink" title="新方案"></a>新方案</h2><p>方案组网图如下：<br><img src="https://img-1255715845.cos.ap-guangzhou.myqcloud.com/img/202406101348133.png"><br>近日思念mesh切换的便利，于是想把家里的e2633的mesh用起来，用一个2633（记作A），先重置，wan口连主路由，配置无线ssid和密码，配置成主mesh。然后另一个2633 （记作B） 连A的lan口，配置成副mesh路由（配置手动似乎能很快识别），但是这样就变成3级网络了，接在主路由下面的是一个网段，接在A下面的是一个网段，接在B下面的又是一个网段。<br>恩山上一个帖子【参考1】里面有个人说了一个办法，我尝试了一下，似乎可行：在以上AB都打开mesh并成功建立mesh的基础上，关闭A的Dhcp，将插在A wan口的网线改插到Lan口（也就是A的lan口通过网线跟主路由Lan对接），B也是将Lan跟A的lan口连接，Mesh还在，所有设备都能上网。但是B还是给下面的设备分配了ip，并且设置成副mesh后，没有关闭dhcp的选项。于是先关闭了B的mesh，把dhcp选项展现出来，关闭掉dhcp，再改回副mesh ap。然后在各个房间测试ok，所有设备都是从主路由DHCP获取到ip，在同一个网段。<br>总结：因此正确的做法应该如下：<br>    1. 主mesh ap 先正常配置（wan口接主路由的lan口），wan口配置dhcp获取ip，本机ip为192.168.10.1（默认，也可以修改，不要跟上级同一个网段），开mesh，设置ssid和密码<br>    3. 副mesh ap， 重置开机，进去关dhcp，配置成mesh 副，然后将wan口连到主mesh ap 的lan口，等待主Ap上网络状态出现主副mesh连接<br>    4. 关主mesh ap 的dhcp，插在wan的网线插到lan口；副mesh ap同样把原来插在wan口的网线插在lan口。</p><p>分析：中兴这台E2633 组Mesh逻辑（其他品牌可能也类似），需要副Mesh Ap通过Wan口连到主Mesh的Lan口上，都开Mesh功能（默认开着）后自动或手动（手动似乎更快更确定些）确定主副Mesh后，过一会就建立起了Mesh关系，此后不再需要保持原来的连接条件。副MeshAp没有dhcp选项，但是dhcp还启作用，需要在其他模式下关闭dhcp，再切换到副meshAp的状态下。</p><p>至此，一个既具备较强的内外网络管理功能和扩展能力，同时也能做Mesh无线漫游的家庭网络就搞定了，综合成本300以内，覆盖100多平（4个房间）。</p><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>[1]  <a href="https://www.right.com.cn/forum/thread-8269476-1-1.html">E2633的mesh设置总结-新手入门及其它(硬件)-恩山无线论坛</a></p><blockquote><p>@hqiamman 7楼：我是用此方式mesh ：先是连接WAN连上MESH设置，显示主副。然后两个做AP，两个均lan接上级主路由桥接，关掉APDHCP，默认主路由开DHCP。正常使用</p></blockquote>]]></content>
     
