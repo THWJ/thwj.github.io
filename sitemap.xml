@@ -2,7 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.jerryking.top/2024/06/12/20240612-%E6%9E%81%E7%AE%80%E6%9E%81%E9%80%9F%E6%9E%81%E4%BD%8E%E6%88%90%E6%9C%AC%E5%AE%B6%E5%BA%AD%E7%BB%84%E7%BD%91%E6%96%B9%E6%A1%88/</loc>
+    <loc>https://blog.jerryking.top/2024/06/13/20240613-%E5%8A%AA%E5%8A%9B%E9%99%B7%E9%98%B1/</loc>
+    
+    <lastmod>2024-06-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.jerryking.top/2024/06/12/20240612-%E6%9E%81%E7%AE%80%E6%9E%81%E9%80%9F%E6%9E%81%E4%BD%8E%E6%88%90%E6%9C%AC%E5%AE%B6%E5%BA%AD%E7%BB%84%E7%BD%91%E6%96%B9%E6%A1%88%20copy/</loc>
     
     <lastmod>2024-06-12</lastmod>
     
@@ -319,7 +328,7 @@
 
   <url>
     <loc>https://blog.jerryking.top/</loc>
-    <lastmod>2024-06-12</lastmod>
+    <lastmod>2024-06-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -327,14 +336,14 @@
   
   <url>
     <loc>https://blog.jerryking.top/tags/%E5%8E%86%E5%8F%B2-%E7%A4%BE%E4%BC%9A-%E4%BA%BA%E6%80%A7/</loc>
-    <lastmod>2024-06-12</lastmod>
+    <lastmod>2024-06-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.jerryking.top/tags/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0-%E5%8E%86%E5%8F%B2/</loc>
-    <lastmod>2024-06-12</lastmod>
+    <lastmod>2024-06-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
