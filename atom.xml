@@ -6,7 +6,7 @@
   <link href="https://blog.jerryking.top/atom.xml" rel="self"/>
   
   <link href="https://blog.jerryking.top/"/>
-  <updated>2024-12-19T02:27:44.268Z</updated>
+  <updated>2024-12-21T11:09:27.145Z</updated>
   <id>https://blog.jerryking.top/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>聊聊这一周20241221</title>
+    <link href="https://blog.jerryking.top/2024/12/21/%E8%81%8A%E8%81%8A%E8%BF%99%E4%B8%80%E5%91%A820241221/"/>
+    <id>https://blog.jerryking.top/2024/12/21/%E8%81%8A%E8%81%8A%E8%BF%99%E4%B8%80%E5%91%A820241221/</id>
+    <published>2024-12-21T00:56:54.000Z</published>
+    <updated>2024-12-21T11:09:27.145Z</updated>
+    
+    <content type="html"><![CDATA[<p>8月份电脑挂了，后面就没有再发博客。想了想还是保持输出吧，就当锻炼脑子。</p><span id="more"></span><h2 id="国内"><a href="#国内" class="headerlink" title="国内"></a>国内</h2><p>这周好多媒体聊养老金的事儿，看了下，个人养老金制度于12.15日推广至全国。某大V说，年收入20万以下的不需要关注，哈哈，不用操这个心了。说白了就是拿时间换税点，适合把一生都规划的妥妥的人去操心。首批权益类指数基金纳入投资范围，是否给大A带来增量资金？反正我不炒大A。</p><p>极越破产的事儿这周在互联网上闹翻了天，一开始编了一堆CEO的小作文，后来好像也没啥实锤。程苓峰写了一篇《不要攒局》，很火，批判了一下大厂攒局，大部分都是失败。不过呢，创业失败率本来就高，不知道大厂攒局的失败率跟整体创业失败率比起来，哪个更高？不过大厂攒局吗，烧掉的钱肯定更多。中厂攒局的公司我呆过（当然我是小喽喽），确实有问题。</p><h2 id="国际"><a href="#国际" class="headerlink" title="国际"></a>国际</h2><p>美国参众两院通过特别拨款法案，避免政府停摆。本来这事儿都不算新闻，美国政府多次面临停摆风险了，但这次马厂公重度参与了，在推上连发了100多个帖子说这事儿，号召选民反对，起了重大的作用。有人说，推上看着马斯克喋喋不休，真有点烦他，但又舍不得屏蔽他。这哥们粉丝数好像有2亿，比川皇还多一倍，感觉影响力比川皇还大。权力一般是不喜欢分享的，两人现在估计还在蜜月期，后面会不会出现裂痕不知道。民主国家，九千岁的下场应该比魏忠贤好吧？</p><p>马斯克牛逼，但哪哪都有他确实有点烦。</p><h2 id="科技"><a href="#科技" class="headerlink" title="科技"></a>科技</h2><p>有人说苹果正在跟腾讯、字节接触，考虑替换原来国内大模型合作伙伴百度。当初苹果在国内选了百度作为大模型合作伙伴让很多人大跌眼镜，也有一帮挽尊的说百度在AI领域投入10几年，怎么也算第一梯队。这次爆出百度跟不上，还要求更多隐私数据，把苹果搞得有点尴尬。魏则西事件后，我几乎没再用过百度，也跟周围的朋友说尽量别用。现在小红书的搜索流量已经是百度的一半了，按照小红书的发展速度，估计用不了多久就能超越百度。</p><p>本周OpenAI搞了一个发布周，每天直播发布产品，但是好像风头都被google抢走了。之前Altman赶着google发布会之前发布产品抢google的风头，这会儿算是被google找回场子了。我使用了一下google gemini2.0，语音对话，确实跟真人差不多了；还有一个视频streaming，开着摄像头跟gemini聊天，它可以实时识别摄像头内的各种物体，并就这些物体跟你展开讨论（例如看到一堆酒，然后开始告诉你怎么用这些酒做鸡尾酒），google眼镜加入了这个功能，更吊了。google还发布了Gemini 2.0 Flash Thinking Mode，有博主随机测试了4道高考数学题，都对了（这些题我现在都不会了）。文生图、文生视频能力都有了很明显的进步。</p><p>chatgpt开始“有记忆”。之前看到一种说法，说AI大模型不是一个好生意，因为几乎每天都有新模型出来，还有一堆开源的，训练模型又特别烧钱，如果不烧，很快就被别人赶上了，领先优势不容易持续，也很难形成护城河。现在chatgpt可以参考过去的对话，也能记住用户提到的一些长期信息，例如兴趣爱好、偏好或某些特定的背景，这样的话，领先的AI大模型平台可以构建具备用户粘性的护城河了。</p><h2 id="加密货币"><a href="#加密货币" class="headerlink" title="加密货币"></a>加密货币</h2><p>某大v发币，因为粉丝多，已经出圈，很多认为他开始割韭菜，也有人认为他是想变现，但是不懂行被人忽悠。</p><p>还看到有个小孩开直播发布加密货币挣了几千美金直接不装了说我就是骗钱；还有个未成年小姑娘也发布meme币搞了100多万美金玩儿消失，话说这都是给绑票的黑帮提供了很好的标的。人人都有铸币权，似乎就开始陷入到每个人和每个人的割局，大家互割韭菜，我凭什么相信你的币呢？</p><p>回顾一下历史，民间可以自己印纸币的时代是什么样（宋）？最终结局是什么？金本位为什么垮塌？通缩的BTC真的能当货币用？<a href="https://blog.jerryking.top/2024/02/03/%E6%AF%94%E7%89%B9%E5%B8%81ETF-%E6%AF%94%E7%89%B9%E5%B8%81%E7%BB%A7%E7%BB%AD%E9%BB%84%E9%87%91%E5%8C%96/">比特币ETF-比特币继续黄金化 | Jerome’s Blog</a></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;8月份电脑挂了，后面就没有再发博客。想了想还是保持输出吧，就当锻炼脑子。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>移动上网解决方案总结</title>
@@ -365,25 +382,6 @@
     
     <summary type="html">&lt;blockquote&gt;
 &lt;p&gt;We may encounter many defeats, but we must not be defeated.&lt;br&gt;— &lt;cite&gt;Maya Angelou&lt;/cite&gt;&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>被限制卖出的DMA是什么？ - 24.2.16</title>
-    <link href="https://blog.jerryking.top/2024/02/16/%E8%A2%AB%E9%99%90%E5%88%B6%E5%8D%96%E5%87%BA%E7%9A%84DMA%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F-24-2-16/"/>
-    <id>https://blog.jerryking.top/2024/02/16/%E8%A2%AB%E9%99%90%E5%88%B6%E5%8D%96%E5%87%BA%E7%9A%84DMA%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F-24-2-16/</id>
-    <published>2024-02-16T13:53:24.000Z</published>
-    <updated>2024-02-16T13:55:46.113Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>In skating over thin ice our safety is in our speed.<br>— <cite>Ralph Waldo Emerson</cite></p></blockquote><span id="more"></span><p>年前DMA开始在财经媒体上大量出现了，因为股市下跌，可能有窗口指导券商限制DMA业务期货单卖出，有些做这个业务的私募可能被搞惨了：<a href="https://mp.weixin.qq.com/s/dqWJ6GooMmbHdgLXySRjxA">守山之死</a>，其实也不稀奇，2015年股灾的时候，股指开空单也被限制过：<a href="https://www.thepaper.cn/newsDetail_forward_1349264">救市在行动！更多期指账户正在被限制开仓_牛市点线面_澎湃新闻-The Paper</a>，当时还出现了一个名词叫：恶意做空。</p><p>在我看来，这都是为舆论和市场情绪找来的替罪羊，短期内转移了矛盾，给情绪一个宣泄的出口，长期看伤害了市场。更更让DMA投资者伤心的是，当前的DMA业务，都是中性业务，本质上并非做空。如果限制了卖出对冲，那DMA投资者就也不会再买入，本质上减少了市场的资金，起到了相反的作用。</p><p>DMA业务的详细情况参考文末给出的Hanson老师的两篇文章（参考[1] 参考[2] ），说的很清楚了，作为曾参与过DMA业务IT解决方案的人，我来简单说说我的理解。</p><p>国内目前所谓的DMA业务，跟欧美市场主流DMA业务的含义有很大的差别。</p><p>DMA，Direct Market Access，正如字面意思，是“直接市场接入”的意思，这个欧美证券市场的一个专业术语，这里的市场就是交易所，DMA业务的本意是直接接入交易所交易。在欧美市场，同一只证券通常可以在多个市场交易，通常投资者下订单给券商后，券商交易员会决定如何执行这笔订单，可能在纽交所，也可能在纳斯达克，也可能在券商自己的暗池。（这不像国内，深交所的股票只能在深交所交易）。券商给投资者提供的DMA业务，是指券商不处理投资者的订单，直接根据投资者的指令将订单发送到指定的交易所进行交易（参考[3]）。根据参考[4]的说法，DMA、ECN、STP是可以互换的，DMA特指证券市场，STP更多用于外汇市场。从业务上理解DMA，就是不存在交易员根据指令下单，而是投资者直接下单到交易所；从技术上理解，其实就是ECN。</p><p>所以其实国内普通散户的沪深A股交易，理论上都是DMA交易。</p><p>国内目前所说的DMA业务，根据参考[1]的说法，应该叫做<strong>收益互换电子化的业务</strong>，这个名称也不是凭空跟DMA关联起来的，是站在券商场外业务的视角，来看待这个业务，从而得出DMA这个名称的。标准的场外业务，比如说融资类的收益互换，投资者跟券商做收益互换，券商交易员在场内交易做对冲，这里面的本质还是投资者加杠杆在场内做交易，但因为使用的是券商的自营账户，所以需要通过券商的交易员去下单。DMA化之后，事实上是投资者直接通过券商提供的交易系统去下单了，中间没有券商交易员这个中间人，所以也可以算DMA了。</p><p>有前辈说的好，金融的本质就是<strong>放贷</strong>。 融资融券也好，收益互换也好，这种DMA业务也好，本质都是券商借钱给投资者上杠杆，帮助投资者增厚收益，券商获得利息收入和手续费收入。至于为什么要绕这么多弯弯，那是因为监管为了控制风险，出台大量监管政策，而所谓的业务创新，大体都是如何绕开这些监管政策吧。</p><p>昨天OpenAI发布了Sora，我简单看了一下，官网给出的示例视频很逼真了。例如第一个东京街头漫步的女人，视频后期女人脸上的斑点和毛孔细节历历在目，非常真实，可以说如果不提前告知的话，我可能认为这段视频是实际拍摄。未来几年影视行业可能也将发生重大变化吧。之前Midjourney也搞出来一些不错的视频，但是不能很好解决一致性问题，OpenAI用他惯常的堆数据和堆算力的能力，<strong>通过大量基于视觉元数据(visual patches)的训练，Sora模型涌现出了这种’3D consistency’的能力</strong>。网上已经有不少激进分子在鼓吹马上要颠覆影视行业了。不过我比较喜欢一句话：当一个新生事物出现时，人们总是高估他短期的影响，低估他长期的影响。目前最优秀的文本、图片、视频AIGC似乎都是OpenAI搞出来的，看来OpenAI是真有点东西，并且：</p><p><img src="https://img-1255715845.cos.ap-guangzhou.myqcloud.com/img/202402162014437.jpg"></p><p>好久没骑车了，今天跟朋友骑行去生态园看花，去早了，花只开了一小部分，还有很多枯叶，可能需要再过一个月，等黄花风铃木到了花期，满山的黄花就很漂亮了。</p><p><img src="https://img-1255715845.cos.ap-guangzhou.myqcloud.com/img/202402162010192.jpg"></p><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>[1] Hanson老师： <a href="https://mp.weixin.qq.com/s/pieW4QmdXWs4aJ7h3OyzKw">收藏吧！DMA的前世今生与模式创新（完整版文字稿）</a>, 2023-05-22<br>[2]  Hanson老师：<a href="https://mp.weixin.qq.com/s/4OSt6fENe370DXu5YWW7DQ">DMA，有两种…</a>, 2023009-13<br>[3]  <a href="https://en.wikipedia.org/wiki/Direct_market_access">直接市场准入 - 维基百科，自由的百科全书 — Direct market access - Wikipedia</a><br>[4]  <a href="https://www.spread-betting.com/basics/dma-spread-betting">Direct Market Access (DMA) Spread Betting</a><br>[5]  OpenAI Sora 的技术报告：<a href="https://openai.com/research/video-generation-models-as-world-simulators">Video generation models as world simulators</a><br>[6]  上文的翻译：<a href="https://baoyu.io/translations/openai/video-generation-models-as-world-simulators">视频生成模型：构建虚拟世界的模拟器 [译] | 宝玉的分享</a></p>]]></content>
-    
-    
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;In skating over thin ice our safety is in our speed.&lt;br&gt;— &lt;cite&gt;Ralph Waldo Emerson&lt;/cite&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</summary>
     
     
