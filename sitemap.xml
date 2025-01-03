@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.jerryking.top/2025/01/03/20250103-%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0-%E6%82%89%E8%BE%BE%E5%A4%9A/</loc>
+    
+    <lastmod>2025-01-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.jerryking.top/2024/12/27/%E9%80%9A%E7%BC%A9%E6%9C%89%E4%BB%80%E4%B9%88%E4%B8%8D%E5%A5%BD%EF%BC%9F/</loc>
     
     <lastmod>2024-12-27</lastmod>
@@ -391,7 +400,7 @@
 
   <url>
     <loc>https://blog.jerryking.top/</loc>
-    <lastmod>2024-12-28</lastmod>
+    <lastmod>2025-01-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -399,21 +408,21 @@
   
   <url>
     <loc>https://blog.jerryking.top/tags/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2024-12-28</lastmod>
+    <lastmod>2025-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.jerryking.top/tags/%E5%8E%86%E5%8F%B2-%E7%A4%BE%E4%BC%9A-%E4%BA%BA%E6%80%A7/</loc>
-    <lastmod>2024-12-28</lastmod>
+    <lastmod>2025-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.jerryking.top/tags/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0-%E5%8E%86%E5%8F%B2/</loc>
-    <lastmod>2024-12-28</lastmod>
+    <lastmod>2025-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
