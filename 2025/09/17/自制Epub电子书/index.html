@@ -27,10 +27,14 @@
 <meta property="og:site_name" content="Jerome&#39;s Blog">
 <meta property="og:description" content="经常需要自制Epub电子书，群里有朋友也有类似需求，分享一下我的方案。">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://blog.jerryking.top/images/https:/s2.loli.net/2025/09/17/mbRcw8jdCg6r23O.png">
+<meta property="og:image" content="https://blog.jerryking.top/images/https:/s2.loli.net/2025/09/17/eJhnN3w2ESGf1ZV.png">
 <meta property="article:published_time" content="2025-09-17T06:22:00.000Z">
 <meta property="article:modified_time" content="2025-09-17T06:22:00.000Z">
 <meta property="article:author" content="Jerome">
+<meta property="article:tag" content="it技巧">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blog.jerryking.top/images/https:/s2.loli.net/2025/09/17/mbRcw8jdCg6r23O.png">
 
 
 <link rel="canonical" href="https://blog.jerryking.top/2025/09/17/%E8%87%AA%E5%88%B6Epub%E7%94%B5%E5%AD%90%E4%B9%A6/">
@@ -138,7 +142,7 @@
         <span class="site-state-item-name">分类</span>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span>
       </div>
   </nav>
@@ -212,14 +216,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>4.2k</span>
+      <span>3.5k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>4 分钟</span>
+      <span>3 分钟</span>
     </span>
 </div>
 
@@ -244,20 +248,17 @@
 <p><strong>MinerU</strong>：pdf（包括doc，png等）转markdown，支持ocr，用大模型转，超牛逼：<a target="_blank" rel="noopener" href="https://mineru.net/OpenSourceTools/Extractor">MinerU-免费全能的文档解析神器</a>。这个最近发现的，用来直接把各种pdf（含扫描pdf）转成html或markdown格式（还支持其他格式）。</p>
 <p><strong>文本编辑器</strong>：找个顺手的就可以。我习惯用vim。</p>
 <h2 id="Docx文件转Epub"><a href="#Docx文件转Epub" class="headerlink" title="Docx文件转Epub"></a>Docx文件转Epub</h2><ol>
-<li><p>先把要转成Epub的docx文件放到一个目录下。</p>
-</li>
-<li><p>在这个目录下执行docx2html.bat脚本文件，脚本代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">@echo off</span><br><span class="line">setlocal enabledelayedexpansion</span><br><span class="line">chcp 65001 &gt;nul</span><br><span class="line">rem 将当前目录下的所有 docx 逐个转成同名 html</span><br><span class="line">:: 遍历当前目录所有.docx文件</span><br><span class="line">for %%f in (*.docx) do (</span><br><span class="line">    :: 提取文件名主体（不含扩展名）</span><br><span class="line">    set &quot;docx_file=%%~nf&quot;</span><br><span class="line">    </span><br><span class="line">    :: 检查同名.html文件是否存在[6,7](@ref)</span><br><span class="line">    if not exist &quot;!docx_file!.html&quot; (</span><br><span class="line">        :: 调用pandoc执行格式转换[3](@ref)</span><br><span class="line">        pandoc &quot;%%f&quot; -o &quot;!docx_file!.html&quot;</span><br><span class="line">        if !errorlevel! equ 0 (</span><br><span class="line">            echo 成功转换: %%f → !docx_file!.html</span><br><span class="line">        ) else (</span><br><span class="line">            echo 转换失败: %%f</span><br><span class="line">        )</span><br><span class="line">    ) else (</span><br><span class="line">        echo 跳过处理: !docx_file!.html 已存在</span><br><span class="line">    )</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">endlocal</span><br><span class="line">echo 全部处理完成！</span><br><span class="line">pause</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
-<li><p>把生成的全部html文件导入到calibre，然后批量将他们转换成epub文件。</p>
-</li>
-<li><p>用Calibre的EpubMerge插件，将这些epub文件合并成一个新的epub文件，合并的时候可以根据需要调整顺序</p>
-</li>
-<li><p>合并后，用calibre修改调整元数据</p>
-</li>
-<li><p>如果目录等有问题，可以在calibre中选择编辑书籍，打开编辑工具，编辑工具可以检查&#x2F;修复epub文件，也可以重新生成目录。<br>[[03 Work&#x2F;写作笔记&#x2F;it技巧分享&#x2F;_resources&#x2F;自制Epub电子书&#x2F;5426e4358141b9f4c713d3ca4d07deab_MD5.png|Open: Pasted image 20250917145503.png]]<br>![03 Work&#x2F;写作笔记&#x2F;it技巧分享&#x2F;_resources&#x2F;自制Epub电子书&#x2F;5426e4358141b9f4c713d3ca4d07deab_MD5.png](&#x2F;images&#x2F;03 Work&#x2F;写作笔记&#x2F;it技巧分享&#x2F;_resources&#x2F;自制Epub电子书&#x2F;5426e4358141b9f4c713d3ca4d07deab_MD5.png)<br>[[03 Work&#x2F;写作笔记&#x2F;it技巧分享&#x2F;_resources&#x2F;自制Epub电子书&#x2F;7af7825616b90a4847b47cc770e768c1_MD5.png|Open: Pasted image 20250917145605.png]]<br>![03 Work&#x2F;写作笔记&#x2F;it技巧分享&#x2F;_resources&#x2F;自制Epub电子书&#x2F;7af7825616b90a4847b47cc770e768c1_MD5.png](&#x2F;images&#x2F;03 Work&#x2F;写作笔记&#x2F;it技巧分享&#x2F;_resources&#x2F;自制Epub电子书&#x2F;7af7825616b90a4847b47cc770e768c1_MD5.png)<br>这里可以删除目录、基于大标题、多级标题、文件等生成目录。</p>
-</li>
-<li><p>电子书主要内容调整好了，就可以在calibre的编辑元数据那里填上一些元数据（书名、作者、日期等），并给电子书找一个好封面。</p>
-</li>
+<li>先把要转成Epub的docx文件放到一个目录下。</li>
+<li>在这个目录下执行docx2html.bat脚本文件，脚本代码：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">@echo off</span><br><span class="line">setlocal enabledelayedexpansion</span><br><span class="line">chcp 65001 &gt;nul</span><br><span class="line">rem 将当前目录下的所有 docx 逐个转成同名 html</span><br><span class="line">:: 遍历当前目录所有.docx文件</span><br><span class="line">for %%f in (*.docx) do (</span><br><span class="line">    :: 提取文件名主体（不含扩展名）</span><br><span class="line">    set &quot;docx_file=%%~nf&quot;</span><br><span class="line">    </span><br><span class="line">    :: 检查同名.html文件是否存在[6,7](@ref)</span><br><span class="line">    if not exist &quot;!docx_file!.html&quot; (</span><br><span class="line">        :: 调用pandoc执行格式转换[3](@ref)</span><br><span class="line">        pandoc &quot;%%f&quot; -o &quot;!docx_file!.html&quot;</span><br><span class="line">        if !errorlevel! equ 0 (</span><br><span class="line">            echo 成功转换: %%f → !docx_file!.html</span><br><span class="line">        ) else (</span><br><span class="line">            echo 转换失败: %%f</span><br><span class="line">        )</span><br><span class="line">    ) else (</span><br><span class="line">        echo 跳过处理: !docx_file!.html 已存在</span><br><span class="line">    )</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">endlocal</span><br><span class="line">echo 全部处理完成！</span><br><span class="line">pause</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+<li>把生成的全部html文件导入到calibre，然后批量将他们转换成epub文件。</li>
+<li>用Calibre的EpubMerge插件，将这些epub文件合并成一个新的epub文件，合并的时候可以根据需要调整顺序</li>
+<li>合并后，用calibre修改调整元数据</li>
+<li>如果目录等有问题，可以在calibre中选择编辑书籍，打开编辑工具，编辑工具可以检查&#x2F;修复epub文件，也可以重新生成目录。<br><img src="/images/https:/s2.loli.net/2025/09/17/mbRcw8jdCg6r23O.png" alt="5426e4358141b9f4c713d3ca4d07deab_MD5.png"></li>
+</ol>
+<p><img src="/images/https:/s2.loli.net/2025/09/17/eJhnN3w2ESGf1ZV.png" alt="7af7825616b90a4847b47cc770e768c1_MD5.png"></p>
+<p>这里可以删除目录、基于大标题、多级标题、文件等生成目录。</p>
+<ol start="7">
+<li>电子书主要内容调整好了，就可以在calibre的编辑元数据那里填上一些元数据（书名、作者、日期等），并给电子书找一个好封面。</li>
 </ol>
 <h3 id="实际案例（某付费文pdf转epub）"><a href="#实际案例（某付费文pdf转epub）" class="headerlink" title="实际案例（某付费文pdf转epub）"></a>实际案例（某付费文pdf转epub）</h3><p>某天制作了一本某某公众号的付费合集。搞了一整天，累死了，记录一下：</p>
 <ul>
@@ -329,6 +330,9 @@
   </div>
 </div>
 
+          <div class="post-tags">
+              <a href="/tags/it%E6%8A%80%E5%B7%A7/" rel="tag"># it技巧</a>
+          </div>
 
         
 
@@ -369,13 +373,13 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">136k</span>
+    <span title="站点总字数">135k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">2:04</span>
+    <span title="站点阅读时长">2:03</span>
   </span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
