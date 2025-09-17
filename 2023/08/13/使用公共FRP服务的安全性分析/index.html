@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="/lib/@fortawesome/fontawesome-free/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
   <link rel="stylesheet" href="/lib/animate.css/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.jerryking.top","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.17.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.jerryking.top","root":"/","images":"/","scheme":"Pisces","darkmode":true,"version":"8.17.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="因中国的互联网发展较晚但发展迅速，我国的ipv4地址不足，像cmcc在寨都不给任何家庭宽带用户提供公网IP地址。没有公网IP地址意味着无法对外提供服务，也不能从外面连回家中，如果你在家里有nas服务器，或者有性能较好的台式机，离开家庭网络后，你将无法利用这些资源。">
 <meta property="og:type" content="article">
@@ -229,8 +229,8 @@
     <div class="post-body" itemprop="articleBody"><p>因中国的互联网发展较晚但发展迅速，我国的ipv4地址不足，像cmcc在寨都不给任何家庭宽带用户提供公网IP地址。没有公网IP地址意味着无法对外提供服务，也不能从外面连回家中，如果你在家里有nas服务器，或者有性能较好的台式机，离开家庭网络后，你将无法利用这些资源。</p>
 <span id="more"></span>
 <p>一种解决方案是通过一台有公网IP的服务器（例如腾讯云服务器，或者其他vps服务器）安装FRP的软件，对外暴露内网服务。</p>
-<p>不过，腾讯和阿里最便宜的轻量云服务器，在国内价格也不菲，即使使用香港轻量云，大概也要300多&#x2F;年，只用于做frp内网穿透有点太浪费了。</p>
-<p>网上有人提供免费的frp服务，也有收费的frp服务（大概120元&#x2F;年），但是使用这种别人提供的frp服务，总是有些担心，frp服务器的管理员是不是可以看到我传输的信息？是不是可以侵入我的内网服务？毕竟，通过frp所走的流量显然都是要经过frp服务器的。</p>
+<p>不过，腾讯和阿里最便宜的轻量云服务器，在国内价格也不菲，即使使用香港轻量云，大概也要300多/年，只用于做frp内网穿透有点太浪费了。</p>
+<p>网上有人提供免费的frp服务，也有收费的frp服务（大概120元/年），但是使用这种别人提供的frp服务，总是有些担心，frp服务器的管理员是不是可以看到我传输的信息？是不是可以侵入我的内网服务？毕竟，通过frp所走的流量显然都是要经过frp服务器的。</p>
 <p>简单的结论是：如果注意好客户端和服务端的安全管理，使用公共frp服务也可以是安全的。</p>
 <p>这里有几个要点：</p>
 <ol>
@@ -241,7 +241,10 @@
 <li>使用密码访问时，密码要有强度</li>
 <li>尽量使用官方原版操作系统、浏览器和客户端</li>
 </ol>
-<p>做到以上几点后，使用公共frp服务也是相对安全的，简单分析如下：<br>使用frp服务时，典型的访问模型是：<br>外网客户端   –&gt;&gt; frp服务器 –&gt;&gt; 内网服务器，<br>所有流量都是经过frp服务器的。但是，当使用https、ssh、rdp这些应用时，这些应用流量本身时经过加密的，加密的私钥都不经过frp服务器，应用流量通过证书（公钥）加密，没有私钥的人无法解密。frp服务器作为中转渠道，是可以进行中间人攻击的，但是，中间人攻击是典型的计算机安全防护模型，互联网安全领域对此进行了大量的研究，现有的安全方案（例如https、ssh等）适当的使用都可以防范中间人攻击。一般来说，中间人需要通过伪造证书来进行攻击。如果https使用ca签署证书，那么中间人伪造证书后，浏览器会告警提醒；如果https使用自签署证书，那么客户端要注意对比证书指纹，即可防范中间人攻击。ssh和rdp类似自签证书，做好指纹比对就比较安全了。参考：<a target="_blank" rel="noopener" href="https://clip.jerryking.top/2023/08/15/ssh-zheng-shu-deng-lu-jiao-cheng-ruan-yi-feng-de-wang-luo-ri-zhi/index.html">SSH 证书登录教程 - Jerome’s Clip</a></p>
+<p>做到以上几点后，使用公共frp服务也是相对安全的，简单分析如下：<br>
+使用frp服务时，典型的访问模型是：<br>
+外网客户端   --&gt;&gt; frp服务器 --&gt;&gt; 内网服务器，<br>
+所有流量都是经过frp服务器的。但是，当使用https、ssh、rdp这些应用时，这些应用流量本身时经过加密的，加密的私钥都不经过frp服务器，应用流量通过证书（公钥）加密，没有私钥的人无法解密。frp服务器作为中转渠道，是可以进行中间人攻击的，但是，中间人攻击是典型的计算机安全防护模型，互联网安全领域对此进行了大量的研究，现有的安全方案（例如https、ssh等）适当的使用都可以防范中间人攻击。一般来说，中间人需要通过伪造证书来进行攻击。如果https使用ca签署证书，那么中间人伪造证书后，浏览器会告警提醒；如果https使用自签署证书，那么客户端要注意对比证书指纹，即可防范中间人攻击。ssh和rdp类似自签证书，做好指纹比对就比较安全了。参考：<a target="_blank" rel="noopener" href="https://clip.jerryking.top/2023/08/15/ssh-zheng-shu-deng-lu-jiao-cheng-ruan-yi-feng-de-wang-luo-ri-zhi/index.html">SSH 证书登录教程 - Jerome’s Clip</a></p>
 <p>展开一点来说，如果内网使用http对外开放服务，那基本上就是全程明文，理论上流量经过的地方（wifi路由器、ip运营商、frp服务器）都可以看到近似明文的账号和密码，早很多年业内就在呼吁全网转https。</p>
 <p>再展开一点来说，操作系统和浏览器这些IT基础软件重要性太大了。多年以前我还使用过各种破解的操作系统和修改版的浏览器，如果这些破解者和修改者在系统中悄悄植入一个假的证书，那么拥有这个假证书私钥的人对客户端发起中间人攻击恐怕就比较难以被发现。</p>
 <p>无论何时，如果浏览器或其他客户端弹出证书问题，除非明确知道自己在干什么，否则都要多一点小心。</p>
@@ -339,7 +342,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">2:03</span>
+    <span title="站点阅读时长">2:02</span>
   </span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动

@@ -18,14 +18,14 @@
 <link rel="stylesheet" href="/lib/@fortawesome/fontawesome-free/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
   <link rel="stylesheet" href="/lib/animate.css/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.jerryking.top","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.17.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.jerryking.top","root":"/","images":"/","scheme":"Pisces","darkmode":true,"version":"8.17.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Nothing will work unless you do.— Maya Angelou  通过本文记录一下半年以来对以chatgpt为代表的AI的学习。">
+    <meta name="description" content="Nothing will work unless you do. — Maya Angelou  通过本文记录一下半年以来对以chatgpt为代表的AI的学习。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="我是如何理解AI的">
 <meta property="og:url" content="https://blog.jerryking.top/2023/07/14/%E6%88%91%E6%98%AF%E5%A6%82%E4%BD%95%E7%90%86%E8%A7%A3AI%E7%9A%84/index.html">
 <meta property="og:site_name" content="Jerome&#39;s Blog">
-<meta property="og:description" content="Nothing will work unless you do.— Maya Angelou  通过本文记录一下半年以来对以chatgpt为代表的AI的学习。">
+<meta property="og:description" content="Nothing will work unless you do. — Maya Angelou  通过本文记录一下半年以来对以chatgpt为代表的AI的学习。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-07-14T06:25:09.000Z">
 <meta property="article:modified_time" content="2023-08-25T08:51:44.902Z">
@@ -228,11 +228,11 @@
     
     
     <div class="post-body" itemprop="articleBody"><blockquote>
-<p>Nothing will work unless you do.<br>— <cite>Maya Angelou</cite></p>
+<p>Nothing will work unless you do.<br>
+— <cite>Maya Angelou</cite></p>
 </blockquote>
 <p>通过本文记录一下半年以来对以chatgpt为代表的AI的学习。</p>
 <span id="more"></span>
-
 <p>从上世纪40~60年代，神经网络理论的提出，计算机神经网络的基本实现以来【参考1，2】。神经网络经过了好几次过山车式的发展，如今可能即将迎来人类长期梦想可用GAI的实现。</p>
 <p>当我第一次使用chatgpt跟其对话时，我几乎无法判断对面是人类还是AI，从直观上感觉接近可以通过图灵测试了。因此，目前很多人认为，AI将带来相当于互联网这种级别的革命。</p>
 <p>这促使我去学习了解当前AI的发展和背后的原理。但我发现，要搞清楚AI的详细原理，对一个缺乏相关训练的中年人有点难，需要一定的数学知识和大量的工程实践。因此我试着尽量从一个较为笼统的概念上去了解。</p>
@@ -249,7 +249,8 @@
 <p>行文至此，就不能不提到当前几乎所有大模型的基础：transformer框架了。这个Google提出的神经网络架构，通过自注意力（self-attention）方法，让文本中的每个token都跟其上下文有联系，找出重要的信息，从而大大的提升了学习和推理的效率。这似乎跟我们人类也很类似，人类也是通过注意力机制，过滤我们不感兴趣的信息，从而提升我们处理信息的效率。</p>
 <p>为了实现较好的效果，现代大模型的参数动辄10亿级别，每次训练和推理，计算量也是惊人。传统的CPU不以并行计算见长，在AI领域捉襟见肘，而设计目标是大量并行计算的显卡GPU则成为了AI事实意义上的加速器。这也推动了Nvidia帝国的扩展和发展。</p>
 <p>本文是我作为一名门外汉，总结我近一段时间学习AI的收获和感想，都是非常感性的认识，其中有些概念可能理解的有误。我至今也没能理解cnn中的卷积的本质是什么？transformer的自注意机制与人类的大脑注意力机制是否本质上相同？在网上找到的多是讲这个东西怎么做的，少见能够将这个东西跟人类大脑处理方式做对比或类比，讲清楚其有效的原因和本质的。希望后续我能找到相关材料，或者能有更深的理解。（也许业界已经讲清楚了，只是我储备知识不足，无法理解吧）</p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ol>
+<h2 id="参考">参考</h2>
+<ol>
 <li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/379350530">神经网络发展历史 - 知乎</a></li>
 <li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/137004590">神经网络简史（上）——从“极高的期待”到“极度的怀疑” - 知乎</a></li>
 <li>此前有不少神经网络在图片识别、语音转文字、翻译等领域做的非常优秀，但是缺少通用性</li>
@@ -351,7 +352,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">2:03</span>
+    <span title="站点阅读时长">2:02</span>
   </span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
