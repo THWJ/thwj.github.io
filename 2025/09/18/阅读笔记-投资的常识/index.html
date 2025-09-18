@@ -30,16 +30,12 @@
 <meta property="og:site_name" content="Jerome&#39;s Blog">
 <meta property="og:description" content="同样是从微信公众号连载搬过来的。非常基础的投资入门，但是很多人（甚至是老股民）都没有认识到。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://math.now.sh/?inline=E%5BR_i%5D-R_f%20%3D%20%5Cbeta_i%5Cbigl%28E%5BR_m%5D-R_f%5Cbigr%29">
-<meta property="og:image" content="https://math.now.sh/?inline=E%5BR_i%5D%20%3D%20R_f%20%2B%20%5Cbeta_i%5Cbigl%28E%5BR_m%5D-R_f%5Cbigr%29">
 <meta property="og:image" content="https://s2.loli.net/2025/09/18/qg5zTwuIsWk3YCA.jpg">
-<meta property="og:image" content="https://math.now.sh/?from=P%20%3D%20%5Csum_%7Bt%3D1%7D%5E%7Bn%7D%20%5Cfrac%7B%5Ctext%7BFCF%7D_t%7D%7B%281%20%2B%20k%29%5Et%7D%0A">
-<meta property="og:image" content="https://math.now.sh/?inline=%7BFCF%7D_t%3D%7BFCF%7D_%28t-1%29%20*%20(1%2Bg)">
 <meta property="article:published_time" content="2025-09-18T02:45:43.000Z">
 <meta property="article:modified_time" content="2025-09-18T02:45:43.000Z">
 <meta property="article:author" content="Jerome">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://math.now.sh/?inline=E%5BR_i%5D-R_f%20%3D%20%5Cbeta_i%5Cbigl%28E%5BR_m%5D-R_f%5Cbigr%29">
+<meta name="twitter:image" content="https://s2.loli.net/2025/09/18/qg5zTwuIsWk3YCA.jpg">
 
 
 <link rel="canonical" href="https://blog.jerryking.top/2025/09/18/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0-%E6%8A%95%E8%B5%84%E7%9A%84%E5%B8%B8%E8%AF%86/">
@@ -138,7 +134,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">59</span>
+          <span class="site-state-item-count">60</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -219,7 +215,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>10k</span>
+      <span>9.4k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -276,19 +272,6 @@
 <blockquote>
 <p>假设风险和税率不变，同一只股票是否发放股利并不会对其长期收益率产生影响。发放股利会导致股价在除息日那天下跌。</p>
 </blockquote>
-<p>第四章 风险与收益（番外）－什么是CAPM</p>
-<p>非科班出身，理解CAPM还是有一点困难。大部分书上都为了严谨，不说人话。还是找AI问问吧。</p>
-<p>先用中文描述一下CAPM公式：<br>
-（某个标的（股票或组合）的）期望收益（E（R_i））= 无风险收益R_f+ （该标的的）贝塔 X 市场的整体风险溢价（（E（R_m））－R_f）</p>
-<p><img src="https://math.now.sh?inline=E%5BR_i%5D-R_f%20%3D%20%5Cbeta_i%5Cbigl%28E%5BR_m%5D-R_f%5Cbigr%29" style="display:inline-block;margin: 0;"/></p>
-<p>说实话我看过很多次camp公式，都不知道他说的是啥。我让AI给我举了一个例子：</p>
-<p>假如现在无风险的国债利率是2%，A股整体长期来看，平均收益是E（R_m）= 8%,也就是说，假如买沪深300，买了30年，算下来平均收益率是8%每年。贝塔就是这只股票或投资组合，他跟着沪深300跳舞的幅度，贝塔等于1意味着市场跳的猛他也猛，市场跳的小他也小。</p>
-<p>所以，如果你购买一个股票或投资组合，你可以合理的预期，这只股票给你带来的收益，大概就是无风险收益 + 贝塔 乘以 （股票市场的整体收益 － 无风险收益）</p>
-<p>关键是，每个股票或组合的贝塔怎么算？其实就是用历史数据，计算该股票或组合每日收益率跟大盘收益率的协方差，方差之类的，再用数学公式处理一下，最后得到目标标的跟大盘的收益率跳动比例。</p>
-<p>这个公式的意思，其实就是一个标的（股票或组合），收益率就应该是无风险收益 + 整个股票市场的风险溢价的一个倍数（倍速跟该标的波动幅度有关）</p>
-<p>但这不是定律，这只是一条根据历史数据进行预计或检验的标准。</p>
-<p>基于历史数据去推断未来，在哲学和认知论上是站不住脚的。仅仅考虑风险溢价，而忽略的整体经济环境、甚至政治和国际环境，显然是有大缺陷的。也就是说，除非在其他环境相对平稳的前提下，这种计算才相对有意义。</p>
-<p>但是camp也不是完全没有意义，至少，当你开枪打1万米高空的小鸟时，他能告诉你，在风平浪静的时候，根据历史经验，你多长时间应该打到多少只鸟才是正常的，打的太少一定是哪里出了问题。</p>
 <h2 id="第二章-金融市场的微观结构">第二章 金融市场的微观结构</h2>
 <p>金融市场没有“定律”，因为<strong>市场是人和人的”博弈“，多方都会因历史情况、其他人的策略而变更自己的策略</strong>。</p>
 <blockquote>
@@ -361,7 +344,7 @@
 <p>非科班出身，理解CAPM还是有一点困难。大部分书上都为了严谨，不说人话。还是找AI问问吧。</p>
 <p>先用中文描述一下CAPM公式：<br>
 （某个标的（股票或组合）的）期望收益（E（R_i））= 无风险收益R_f+ （该标的的）贝塔 X 市场的整体风险溢价（（E（R_m））－R_f）</p>
-<p><img src="https://math.now.sh?inline=E%5BR_i%5D%20%3D%20R_f%20%2B%20%5Cbeta_i%5Cbigl%28E%5BR_m%5D-R_f%5Cbigr%29" style="display:inline-block;margin: 0;"/></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>E</mi><mo stretchy="false">[</mo><msub><mi>R</mi><mi>i</mi></msub><mo stretchy="false">]</mo><mo>=</mo><msub><mi>R</mi><mi>f</mi></msub><mo>+</mo><msub><mi>β</mi><mi>i</mi></msub><mrow data-mjx-texclass="OPEN"><mo minsize="1.2em" maxsize="1.2em">(</mo></mrow><mi>E</mi><mo stretchy="false">[</mo><msub><mi>R</mi><mi>m</mi></msub><mo stretchy="false">]</mo><mo>−</mo><msub><mi>R</mi><mi>f</mi></msub><mrow data-mjx-texclass="CLOSE"><mo minsize="1.2em" maxsize="1.2em">)</mo></mrow></math></p>
 <p>说实话我看过很多次camp公式，都不知道他说的是啥。我让AI给我举了一个例子：</p>
 <p>假如现在无风险的国债利率是2%，A股整体长期来看，平均收益是E（R_m）= 8%,也就是说，假如买沪深300，买了30年，算下来平均收益率是8%每年。贝塔就是这只股票或投资组合，他跟着沪深300跳舞的幅度，贝塔等于1意味着市场跳的猛他也猛，市场跳的小他也小。</p>
 <p>所以，如果你购买一个股票或投资组合，你可以合理的预期，这只股票给你带来的收益，大概就是无风险收益 + 贝塔 乘以 （股票市场的整体收益 － 无风险收益）</p>
@@ -403,7 +386,8 @@
 股票也应如此，但是股票未来现金流不确定，并且在公司存在的范围内，可以认为是一直持续的（没有时间的限制）。</p>
 <p>这里举了一一个FCF（自由现金流）模型。我没看明白，跑去问了下Kimi。FCF是DCF（现金流折现模型Discounted Cash Flow）的特例。<br>
 DCF 基本公式 ：</p>
-<p style=""><img src="https://math.now.sh?from=P%20%3D%20%5Csum_%7Bt%3D1%7D%5E%7Bn%7D%20%5Cfrac%7B%5Ctext%7BFCF%7D_t%7D%7B%281%20%2B%20k%29%5Et%7D%0A" /></p><p>假如 <img src="https://math.now.sh?inline=%7BFCF%7D_t%3D%7BFCF%7D_%28t-1%29%20*%20(1%2Bg)" style="display:inline-block;margin: 0;"/></p>
+<p><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mi>P</mi><mo>=</mo><munderover><mo data-mjx-texclass="OP">∑</mo><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>n</mi></mrow></munderover><mfrac><msub><mtext>FCF</mtext><mi>t</mi></msub><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>k</mi><msup><mo stretchy="false">)</mo><mi>t</mi></msup></mrow></mfrac></math></p>
+<p>假如 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><msub><mrow><mi>F</mi><mi>C</mi><mi>F</mi></mrow><mi>t</mi></msub><mo>=</mo><msub><mrow><mi>F</mi><mi>C</mi><mi>F</mi></mrow><mo stretchy="false">(</mo></msub><mi>t</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>∗</mo><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>g</mi><mo stretchy="false">)</mo></math></p>
 <h2 id="第六章-交易成本、费用和佣金">第六章 交易成本、费用和佣金</h2>
 <p>这章主要是美国的情况，中国的情况有很大的不同。</p>
 <p>但是都需要注意的是，股票涨跌显而易见，但是很多人看不到成本，往往一顿操作，看起来应该是赚了很多，算完账发现大部分就给了佣金。这里面有很多细节值得扣一下。</p>
@@ -517,6 +501,9 @@ DCF 基本公式 ：</p>
                 </a>
             </div>
             <div class="post-nav-item">
+                <a href="/2025/09/18/test/" rel="next" title="test">
+                  test <i class="fa fa-chevron-right"></i>
+                </a>
             </div>
           </div>
     </footer>
@@ -553,7 +540,7 @@ DCF 基本公式 ：</p>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">2:28</span>
+    <span title="站点阅读时长">2:27</span>
   </span>
 </div>
 <div class="busuanzi-count">
