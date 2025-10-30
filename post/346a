@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+  <link rel="stylesheet" href="/css/hexo-style-withmycss.css">
+
+
+
+
+<link rel="stylesheet" href="/lib/@fortawesome/fontawesome-free/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="/lib/animate.css/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.jerryking.top","root":"/","images":"/","scheme":"Pisces","darkmode":true,"version":"8.17.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="看起来有不少朋友家里网络很“卡”，在这个mesh 路由白菜价的时代，实在是不应该。给个非常简单方案，保证在低成本下快速提升家里各个位置的网络速度（有线千兆、无线百兆以上），让家里的网络流畅起来。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="极简极速极低成本家庭组网方案">
+<meta property="og:url" content="https://blog.jerryking.top/post/346a">
+<meta property="og:site_name" content="Jerome&#39;s Blog">
+<meta property="og:description" content="看起来有不少朋友家里网络很“卡”，在这个mesh 路由白菜价的时代，实在是不应该。给个非常简单方案，保证在低成本下快速提升家里各个位置的网络速度（有线千兆、无线百兆以上），让家里的网络流畅起来。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img-1255715845.cos.ap-guangzhou.myqcloud.com/img/202406121259344.jpg">
+<meta property="article:published_time" content="2024-06-12T05:10:00.000Z">
+<meta property="article:modified_time" content="2024-06-12T05:50:29.113Z">
+<meta property="article:author" content="Jerome">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-1255715845.cos.ap-guangzhou.myqcloud.com/img/202406121259344.jpg">
+
+
+<link rel="canonical" href="https://blog.jerryking.top/post/346a">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://blog.jerryking.top/post/346a","path":"post/346a","title":"极简极速极低成本家庭组网方案"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>极简极速极低成本家庭组网方案 | Jerome's Blog</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="Jerome's Blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Jerome's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Jerome的日常随想</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E5%8F%A5%E8%AF%9D%E6%96%B9%E6%A1%88"><span class="nav-number">1.</span> <span class="nav-text">一句话方案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BE%E5%A4%87%E6%8E%A8%E8%8D%90"><span class="nav-number">2.</span> <span class="nav-text">设备推荐</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A3%85%E4%BF%AE%E7%9A%84%E6%97%B6%E5%80%99%E6%88%BF%E9%97%B4%E6%B2%A1%E6%9C%89%E9%93%BA%E7%BD%91%E7%BA%BF%E6%80%8E%E4%B9%88%E5%8A%9E%EF%BC%9F"><span class="nav-number">3.</span> <span class="nav-text">装修的时候房间没有铺网线怎么办？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-number">4.</span> <span class="nav-text">其他</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83"><span class="nav-number">5.</span> <span class="nav-text">参考</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Jerome"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Jerome</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">71</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.jerryking.top/post/346a">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Jerome">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jerome's Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="极简极速极低成本家庭组网方案 | Jerome's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          极简极速极低成本家庭组网方案
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2024-06-12 13:10:00 / 修改时间：13:50:29" itemprop="dateCreated datePublished" datetime="2024-06-12T13:10:00+08:00">2024-06-12</time>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>2k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>2 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>看起来有不少朋友家里网络很“卡”，在这个mesh 路由白菜价的时代，实在是不应该。给个非常简单方案，保证在低成本下快速提升家里各个位置的网络速度（有线千兆、无线百兆以上），让家里的网络流畅起来。</p>
+<span id="more"></span>
+<h2 id="一句话方案">一句话方案</h2>
+<p>每个房间铺网线，每个房间部署一个mesh路由器，分别开5G热点和2.4G热点，不开双频合一，高速设备（手机、Pad）都连到5G热点上。</p>
+<p>解释：现在千兆mesh路由器白菜价了（闲鱼30左右随便买，后面有推荐的型号）。再厉害的穿墙路由，5G热点也穿不了承重墙，2.4G热点干扰太严重，网速和稳定性都很差，除了一些不支持5Ghz的网络设备（例如智能台灯之类的），手机、pad这些建议全部使用5Ghz的热点。mesh路由之间可以自动漫游，这样就能保证每个房间都有高速的5Ghz热点网络，网速轻轻松松200m以上。（10mbps就可以很流畅的看B站高清视频、刷抖音了，200m网络，理论上10个人同时看视频都可以）</p>
+<h2 id="设备推荐">设备推荐</h2>
+<p>低价设备1：创维 WR6640x，1800M的WiFi6千兆双频路由，闲鱼25元，有白色的（白色的跟墙一个颜色，用路由器支架挂墙上，美观）<br>
+低价设备2：中兴E2603，1800M的WiFi6千兆双频路由，闲鱼30左右，这个应该可以跟中兴E2633 组mesh<br>
+低价设备3：360T6GS，1800M，闲鱼30左右，这个的好处是白色，吊顶，可以装在天花板上，更美观<br>
+中价设备1：H3C RT3000/RC3000， AX3000路由器，最高3000M网速，闲鱼50元左右。</p>
+<p>以上设备推荐都来自参考【1】的推荐。同一型号都可以组mesh。有多少个房间买多少个，<strong>5房买5个也就150元</strong>，考虑是二手货，可以多买一两个当备件。</p>
+<p>中价设备2：中兴e2633，ax3000路由器，最高3000M，闲鱼全新90左右，这个是我自己用的，挺好用的，理论上可以跟上面的e2603组mesh（未验证）</p>
+<p><strong>个人推荐中兴E2603或E2633，或者两者混合：E2633做主路由，E2603做从路由</strong>。如果要买新的路由，可以自行在京东或淘宝选购Tp-link家支持Mesh的无线路由器。</p>
+<p>高价设备1：中兴星云晴天套装（1母2子），闲鱼599，京东695，额外购买Ap 247一个（京东），闲鱼160左右。这个有一些特殊的用途，参考【2】，一般用不着他。不过做的很漂亮，对美观有要求的土豪可以上。</p>
+<h2 id="装修的时候房间没有铺网线怎么办？">装修的时候房间没有铺网线怎么办？</h2>
+<p>以前真没有低成本的方案，现在有了mesh，比有线差一点，但是也比什么穿墙路由好很多。方法简单说就是利用Mesh路由的无线Mesh组网能力，让5Ghz型号铺满全屋；要点是通过设计路由器位置，避开承重墙。</p>
+<p>补充一点背景知识，目前家用无线路由器使用2.4Ghz和5Ghz两个频段，2.4Ghz速度慢，干扰多，很多人说网络太卡就是连到2.4Ghz频率上了。5Ghz带宽大，延迟低，缺点是<strong>不能穿承重墙</strong></p>
+<p>背景说完了，来说说装修的时候有的房间没铺网线怎么办。网上随便找了个户型图示例：</p>
+<p><img src="https://img-1255715845.cos.ap-guangzhou.myqcloud.com/img/202406121259344.jpg" alt=""></p>
+<p>记住，<strong>需要连5Ghz频率的热点才能获得较快的网速，5Ghz不能穿承重墙</strong>。如上面这个户型图，如果在A点布置一个无线Mesh路由器，则除了2个盲区外，全屋基本可以覆盖5Ghz信号。如果在C点补一个同型号的Mesh路由器，除盲区2外，其他地方也基本都被5Ghz覆盖了。C点这里也不一定需要铺有有线的网络，因为A-C之间没有承重墙，A-C两个Mesh路由器可以组无线Mesh，虽然速度是有线的一半，但是考虑的如果买的是E2633，5G无线有2000M，一般也有千兆了，再降一倍，500M也很好了。</p>
+<p>如果全屋都没有铺有线，只有入户这里放了个无线路由器，那么用Mesh路由替换掉现有的路由器，再在A点放一个Mesh路由，两个组成无线Mesh网络。如果入户弱电箱比较小，放不下较大的无线路由器，那么中兴的星云+晴天套装就是专门为这种情况准备的（参考【2】）。</p>
+<p>以上是个简单的示例，Mesh还可以无线级联的（尽管一般无线级联速度会再降一半），可以通过增加无线Mesh路由，绕开承重墙，增加房间的5G网络覆盖。切记两个无线组网的Mesh路由之间不要有承重墙。</p>
+<h2 id="其他">其他</h2>
+<p>装修房子时，一定尽量在每个房间预留网线或光纤，网线5类就够了，网络面板尽量买直通式，师傅打网络头时让他8根线都要打上。</p>
+<h2 id="参考">参考</h2>
+<p>[1]  <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/IjPHbxydBwWNLbBUE9qfDQ">玩的就是性价比，WiFi6路由的“八大天王”，几十元搞定mesh组网</a><br>
+[2]  <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/694366994?utm_id=0">家庭组网中“一对多”网络结构下组建有线mesh的“破局方案”——中兴星云·晴天PoE全屋路由套装 - 知乎</a><br>
+[3]  路由器，尤其是黑色路由器，房间里放地上或小凳子、小桌子上都不好看。最好的办法是装修的时候用吸顶的无线路由器或AP，但是一来比较贵，二来很多已经装修好了。建议买白色路由器，<strong>淘宝搜“路由 壁挂”</strong>，买那种可以把路由器挂在墙上的配件。（路由器很轻，不需要打钉，配件一般都带自粘贴的贴片）</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="https://twitter.com/happydanye">
+            <span class="icon">
+              <i class="fab fa-twitter"></i>
+            </span>
+
+            <span class="label">Twitter</span>
+          </a>
+      </div>
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="https://t.me/+naBSux0lS9wwNThl">
+            <span class="icon">
+              <i class="fab fa-telegram"></i>
+            </span>
+
+            <span class="label">Telegram</span>
+          </a>
+      </div>
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+      </div>
+  </div>
+</div>
+
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/post/976" rel="prev" title="分享一个低成本软路由加Mesh Ap的组网方案">
+                  <i class="fa fa-chevron-left"></i> 分享一个低成本软路由加Mesh Ap的组网方案
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/post/1923" rel="next" title="努力陷阱">
+                  努力陷阱 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Jerome</span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">180k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">2:44</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="/lib/animejs/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+</body>
+</html>

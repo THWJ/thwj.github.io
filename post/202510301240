@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+  <link rel="stylesheet" href="/css/hexo-style-withmycss.css">
+
+
+
+
+<link rel="stylesheet" href="/lib/@fortawesome/fontawesome-free/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="/lib/animate.css/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.jerryking.top","root":"/","images":"/","scheme":"Pisces","darkmode":true,"version":"8.17.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="《达芬奇密码》作者丹布朗的新书《the secret of secrets》，在其上一部著作发表后近10年，终于在2025年09月发行了。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="下一战：脑机接口">
+<meta property="og:url" content="https://blog.jerryking.top/post/202510301240">
+<meta property="og:site_name" content="Jerome&#39;s Blog">
+<meta property="og:description" content="《达芬奇密码》作者丹布朗的新书《the secret of secrets》，在其上一部著作发表后近10年，终于在2025年09月发行了。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-10-30T04:40:11.000Z">
+<meta property="article:modified_time" content="2025-10-30T04:40:11.000Z">
+<meta property="article:author" content="Jerome">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://blog.jerryking.top/post/202510301240">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://blog.jerryking.top/post/202510301240","path":"post/202510301240","title":"下一战：脑机接口"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>下一战：脑机接口 | Jerome's Blog</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="Jerome's Blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Jerome's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Jerome的日常随想</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Jerome"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Jerome</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">71</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.jerryking.top/post/202510301240">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Jerome">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jerome's Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="下一战：脑机接口 | Jerome's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          下一战：脑机接口
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2025-10-30 12:40:11" itemprop="dateCreated datePublished" datetime="2025-10-30T12:40:11+08:00">2025-10-30</time>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>1.9k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>2 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>《达芬奇密码》作者丹布朗的新书《the secret of secrets》，在其上一部著作发表后近10年，终于在2025年09月发行了。</p>
+<span id="more"></span>
+<p>花了2~3天时间，原版看了不到30章（共近200章），到处都是精心设计的悬疑和讲故事的技巧，我现在不怎么吃这一套了，实在没耐心了，要看他装什么鬼，于是搞了双语版，一天就看完了。</p>
+<p>丹布朗讲故事的能力是一流的，却有明显的雕琢痕迹，可以明显感觉到他高超的写作技巧，但是没有曹雪芹先生大巧若拙的笔锋，味精味重了一些，但是总的来说，好吃。</p>
+<p>有几点很有意思（以下内容可能有轻微剧透）：</p>
+<ol>
+<li>大使Navel怎么<strong>控制下属</strong>的，或者说，可能是一种通行的“潜规则”管理机制。一方面，机构规定严禁办公室恋情（<strong>把标准、目标定的高高的</strong>）；另一方面，大使Navel对下属的办公室恋情了若指掌，但平时引而不发（<strong>掌握你小辫子</strong>）；当下属被安排道德上有问题的工作，不堪道德压力要退出时，Navel抛出这个问题作为“胁迫”/谈判筹码，迫使下属继续工作（<strong>关键时候用上</strong>）。但同时大使也表现出“温情”的一面，告诉下属，如果有危险，可以马上退出；并且说这非她的本意，是上面给她的压力（<strong>假装或真的有其他人，咱们都是被逼无奈</strong>）。日常下属来拜见，她的第一个问题是：我有什么可以帮你的？要不说发达资本主义套路更深，更人性化呢？总好过某些人翻来覆去就会那一句：<strong>你克服一下</strong>。</li>
+<li>这个世界是<strong>男人联盟</strong>掌控的，或者说，男人靠无血缘关系的联盟掌控世界（女性靠有血缘的家族掌控世界）。Navel被提名为捷克大使时，她就好奇“Nagel was stunned. The old-boy network is now recruiting old girls?（什么时候老男孩联盟开始吸纳老女孩了？）”，当然事后证明她是部分的作为傀儡出现在那个位置上的，运作这个事儿的，是一个CIA内部的老男孩的联盟。<strong>进化心理学</strong>有一部分提及，因为男性生育潜力上限高、子女关系不确定性等特性，进化出了“联盟”的适应性心理，通过男性联盟去<strong>抢夺/保护资源</strong>（包括生育资源：女性），在人类进化史上是一种普遍的现象。而女性因为生育数量有限、子女亲属关系确定等特性，可能更倾向血缘网络。</li>
+<li>上位管理者的难题和解决之道（<strong>The Dark Side</strong>）。在本小说中，捷克大使Navel和CIA主管Judd的形象都还偏正面，锅都是给CIA科技主管Finch背了。但是，有实际工作经验的人都知道，只走正道可能<strong>寸步难行</strong>，但是走偏道可能<strong>万劫不复</strong>。高层管理者，面对复杂的局势，某些时候确实如某领导所说的：战战兢兢，如履薄冰。解决方法就是<strong>只要结果，不管过程</strong>。提拔那些结果好的人，在他的问题没有暴露之前，重用他；一旦问题暴露，领导最多担个失察的责任（<strong>达康书记：这个我熟</strong>）。对于中层来说，就有速成和稳妥之道了。想速成就难免剑走偏锋，承担事情暴漏的风险，只上报结果，不上报细节，<strong>自己背锅，绝不连累领导</strong>，出了问题，或许还有东山再起之日；稳妥之道则是勤勤恳恳，缓慢升迁，最后可能止步中基层。</li>
+<li>神经科学和意识研究。在<strong>脑机接口</strong>概念火热的当下，神经科学和意识研究也似乎很流行。我在油管看到过不少这方面的视频。本文提到的很多科学概念，都是有理论依据的（但是考虑到丹布朗在达芬奇密码中的夸大和牵强，本小说不能当作严肃的科学作品看待，可以作为吸引进一步研究的入门故事）；丹布朗似乎还喜欢在小说中花很大的篇幅讲解理论，很多人不喜欢，我倒是觉的很不错。《达芬奇密码》中作者的貌似严谨考证，其实都是为了看起来真实，提升小说阅读体验，其中很多所谓的真实组织和事件，都被证明是阴谋论和缺乏可靠的证据，因此我对丹布朗在本书中提及的理论抱有警惕的态度。一两年前，某公众号博主就在其文章中提及自己在某些瞬间，被另一个<strong>高纬度</strong>的“自己”投射了，从而开启了“智慧“。这个说法跟本书，以及历史上很多人提及的宇宙是个<strong>统一意识体</strong>，<strong>时间不存在</strong>，过去未来都一直在那里的概念是很有相似之处的。简单的双缝衍射实验（本书也有提及）打破了量子世界时间和因果律的束缚，而最近也看到过一个理论，人类大脑并不仅仅工作在普通物理化学水平，而是工作在<strong>量子水平</strong>。OMG。</li>
+<li>在冷战谢幕，但是中美对抗的大背景下，作者丹布朗一边讽刺CIA草菅人命，搞阴谋诡计和秘密武器，一边又给CIA辩护：所谓意识武器，你不领先，敌人就要领先。不过丹布朗在结尾升华了一下主题，所有的竞争，来自于对死亡的恐惧，如果女主的理论得到证明和世界范围内的认可，人们消除了对死亡的恐惧，是否世界会变得欣欣向荣，一片和谐？我认为可能还是过于乐观了，俗话说中，除了”总有刁民想害朕外“，还有一句”动物生来平等，但是有些动物比其他动物更平等“。</li>
+</ol>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="https://twitter.com/happydanye">
+            <span class="icon">
+              <i class="fab fa-twitter"></i>
+            </span>
+
+            <span class="label">Twitter</span>
+          </a>
+      </div>
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="https://t.me/+naBSux0lS9wwNThl">
+            <span class="icon">
+              <i class="fab fa-telegram"></i>
+            </span>
+
+            <span class="label">Telegram</span>
+          </a>
+      </div>
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+      </div>
+  </div>
+</div>
+
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/post/202510201608" rel="prev" title="傻姥娘，疼外孙">
+                  <i class="fa fa-chevron-left"></i> 傻姥娘，疼外孙
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Jerome</span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">180k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">2:44</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="/lib/animejs/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+</body>
+</html>

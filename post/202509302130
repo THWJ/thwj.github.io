@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+  <link rel="stylesheet" href="/css/hexo-style-withmycss.css">
+
+
+
+
+<link rel="stylesheet" href="/lib/@fortawesome/fontawesome-free/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="/lib/animate.css/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.jerryking.top","root":"/","images":"/","scheme":"Pisces","darkmode":true,"version":"8.17.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="TLDR： 1. 正规运营商的卡（基本没有低于29的，有一些店铺赠送做到19，9的，往往都是头几个月送，后面恢复原价），最便宜的正规卡应该是广电的惠民卡 2. 大厂（例如中兴、华为）的可插卡的随身wifi。4g的便宜，5g的贵 3. 大厂（中兴、华为）的随身wifi（例如中兴u30air，300多）。中兴的有9（10g），29（30g）的套餐，华为最小好像都是50多的套餐 其他的基本都是骗。（有个">
+<meta property="og:type" content="article">
+<meta property="og:title" content="移动上网解决方案总结">
+<meta property="og:url" content="https://blog.jerryking.top/post/202509302130">
+<meta property="og:site_name" content="Jerome&#39;s Blog">
+<meta property="og:description" content="TLDR： 1. 正规运营商的卡（基本没有低于29的，有一些店铺赠送做到19，9的，往往都是头几个月送，后面恢复原价），最便宜的正规卡应该是广电的惠民卡 2. 大厂（例如中兴、华为）的可插卡的随身wifi。4g的便宜，5g的贵 3. 大厂（中兴、华为）的随身wifi（例如中兴u30air，300多）。中兴的有9（10g），29（30g）的套餐，华为最小好像都是50多的套餐 其他的基本都是骗。（有个">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-08-08T16:00:00.000Z">
+<meta property="article:modified_time" content="2025-09-30T13:30:19.000Z">
+<meta property="article:author" content="Jerome">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://blog.jerryking.top/post/202509302130">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://blog.jerryking.top/post/202509302130","path":"post/202509302130","title":"移动上网解决方案总结"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>移动上网解决方案总结 | Jerome's Blog</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="Jerome's Blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Jerome's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Jerome的日常随想</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#TLDR"><span class="nav-number">1.</span> <span class="nav-text">TLDR</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9A%8F%E8%BA%ABwifi%E4%B9%B1%E8%B1%A1"><span class="nav-number">2.</span> <span class="nav-text">随身wifi乱象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%AB%98%E7%AB%AF%E9%9A%8F%E8%BA%ABwifi%E5%8F%8A%E9%99%84%E5%B8%A6%E6%B5%81%E9%87%8F%E5%8D%A1"><span class="nav-number">3.</span> <span class="nav-text">高端随身wifi及附带流量卡</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A3%E8%A7%84%E6%89%8B%E6%9C%BA%E5%8D%A1%EF%BC%88%E6%B5%81%E9%87%8F%EF%BC%89"><span class="nav-number">4.</span> <span class="nav-text">正规手机卡（流量）</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Jerome"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Jerome</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">71</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.jerryking.top/post/202509302130">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Jerome">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jerome's Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="移动上网解决方案总结 | Jerome's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          移动上网解决方案总结
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-08-09 00:00:00" itemprop="dateCreated datePublished" datetime="2024-08-09T00:00:00+08:00">2024-08-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-09-30 21:30:19" itemprop="dateModified" datetime="2025-09-30T21:30:19+08:00">2025-09-30</time>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>3.7k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>3 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p><strong>TLDR</strong>：<br>
+1. 正规运营商的卡（基本没有低于29的，有一些店铺赠送做到19，9的，往往都是头几个月送，后面恢复原价），最便宜的正规卡应该是广电的惠民卡<br>
+2. 大厂（例如中兴、华为）的可插卡的随身wifi。4g的便宜，5g的贵<br>
+3. 大厂（中兴、华为）的随身wifi（例如中兴u30air，300多）。中兴的有9（10g），29（30g）的套餐，华为最小好像都是50多的套餐</p>
+<p>其他的基本都是骗。（有个舒适盾的产品，知乎上有人推荐，说大学生创业，产品看起来比较朴素，客服也比较冷淡，可能是正经产品，不过不支持typec充电）</p>
+<p>@2025年09月30日  最近我从京东自营购入中国电信流量卡，用5G手机开热点当wifi。我发现，访问我的家庭服务器（移动家宽）时，网速只有20kb，经网络搜索，是中国移动对电信和联通的上行流量进行了限速。我用流量卡的最初原因就是在面可以远程家里的电脑，看来一定要跟家宽同网。移动的家宽便宜流量卡贵，电信的流量卡便宜家宽贵，nnd。另外，4g在本人测试区域（南方沿海城市）被严重限速，5G电信卡插到只支持4g的设备（手机和随身wifi）上，只有不到10mb的速度，用5G设备（手机）至少有50mb的速度。</p>
+<p>@2025-02-27 14:35:40  我又上当了，这次还是苏宁易购。看来这个牌子跟飞利浦、永久、凤凰一样，卖给骗子们割韭菜了。之前不是随身wifi限速死慢吗，我考虑买个流量卡装手机里总可以了吧。苏宁易购有个9.9包40G的流量卡，也是用的时候充。郑州发货，到家装个app要充值至少50块，我又不傻，网上随便一搜，全是差评，感情还是随身wifi那一套啊。随身wifi、流量卡这个领域基本可以肯定全是骗子了。除非真正的运营商产品和大厂产品。（注意那些打着运营商旗号和擦边大厂的产品，也都是骗子）</p>
+<span id="more"></span>
+<p>@2024-12-19 10:25:26  写了一堆废物，本文作为警醒。上个月手机流量不太够，把之前买的随身wifi拿出来，便宜的套餐找不到了，买个了9.9的套餐想凑合用，网速慢到要死。也就是说，去云控依然解决不了网速问题。刚需还是买中兴的u30air吧。</p>
+<p>以下内容作废，请勿参考。</p>
+<p>之前写了家庭网络方案：<a href="https://blog.jerryking.top/2024/06/12/20240612-%E6%9E%81%E7%AE%80%E6%9E%81%E9%80%9F%E6%9E%81%E4%BD%8E%E6%88%90%E6%9C%AC%E5%AE%B6%E5%BA%AD%E7%BB%84%E7%BD%91%E6%96%B9%E6%A1%88%20copy/">极简极速极低成本家庭组网方案 | Jerome’s Blog</a> ，人不会总呆在家里和有wifi的地方。尤其是经常要出差的人，需要考虑非家和办公室环境的上网方案。<br>
+设备越来越多，虽然大部分有sim卡插槽，但是每个设备都插一张也不现实。很多设备用的少，移动副卡也有数量限制，每张还有10元月租。<br>
+临时用用，主手机开个热点也够了。但是主手机套餐流量贵，还消耗主手机电量，随身wifi也是个不错的选择。<br>
+研究了一下发现，随身wifi这个市场坑太多，本文总结一下。</p>
+<h3 id="TLDR">TLDR</h3>
+<p>正式使用，对稳定性，速度有一定要求，推荐中兴u30air及其自带的流量套餐。设备大概400多元，套餐100G单网39/月，50G单网29/月 . 12个月599 。 京东官网有售。这是个5G随身wifi设备，速率上限可以到1G，（视使用地网络情况）可以说基本没有设备限速，QOS等级也比较高。网友反馈说信号比手机好，从高铁隧道一出来就连上了，商用首选。<a target="_blank" rel="noopener" href="https://item.jd.com/100100368561.html">【中兴U30 Air】中兴（ZTE）U30 Air 5G随身免插卡移动wifi无线网卡便携式热点5g路由器无限笔记本电脑通用流量车载卡托2024款【行情 报价 价格 评测】-京东</a><br>
+随便用用，作为主用手机的流量补充，对稳定性要求不高，可以在闲鱼搜“海尔 随身wifi 毕业”，购买个人商家折腾好的随身wifi设备+流量卡。大概60-80元，带一张流量卡，1.3元/300G/月套餐。实测在深圳白天速度还行（30-40mbps），晚上不行，移动中切换卡感明显，胜在流量极其便宜，所在地电信信号好的情况下，速率也是够的。为什么要在闲鱼买呢？因为京东和淘宝上的商家售卖的设备和卡都是有云控和限制的（下文说），闲鱼上这种是个人买回来后破解了云控和限制，理论上可以跑满卡和设备的上线，也可以换个人的手机卡使用。</p>
+<h3 id="随身wifi乱象">随身wifi乱象</h3>
+<p>最早是前公司老板有次买了一台随身wifi给大家推荐，我用的少，一般手机热点就够了，有个兄弟出差用的多，经常抱怨流量不够，我问他为啥不买一个，他说一个月小一百的资费，公司又不报销。我才发现原来随身wifi设备不贵，每月的套餐费不算便宜。<br>
+最近在家的时间多，电话和流量都少，因此把移动的套餐降了一降。论坛上看到随身wifi的讨论，考虑到万一外出旅游，看个视频什么的，酒店的wifi速率都不好，自己备一个随身wifi也是不错的。网友们说1.3元/300G/月的套餐，随用随充，这样也没有什么负担，设备呢就几块钱10几块钱，跟白送没什么区别。<br>
+于是我就下单了一个，两个，三个。为什么买这么多？第一个没有1.3/300G的套餐，虽然也很便宜，好像6.9/300G，但是既然有1.3的，就想来一个，顺便丢一个给家人用。然后发现这两个都及其不稳定，速度时好时坏，考虑可能是设备的原因，就又买了一个更贵的。前两个大概7快多，后一个大概20多。最后发现，主要还是这种低端物联卡本身的QOS级别不高，速率和质量的级别较低。网上有一种说法，低于1元/10G的产品，商家是亏钱的，所以就要想各种办法进行限制。随身wifi上都附带了云控，除了运营上本身对低端物联网卡的各种限制外，卖设备商家肯定通过云控也对速率做了限制。据网友反馈，商家销售的随身wifi产品，在同一个链接下可能有10来个，分为单天线单通道，双天线双通道…八天线八通道等各种，实际上设备是一样的，对速率的控制，大概都是通过设备的云控做到的。酷安和闲鱼上有大量个人销售破解版的随身wifi设备和卡，我买了一个后，验证了这种说法，破解后的随身wifi设备，在白天固定地点的速率确实高不少。但是晚上和移动中切换还是较差，比手机差。这可能是设备和物联网卡本身的限制。<br>
+当然，这种便宜的随身wifi设备还有诸多限制（否者这么低的价格，严重影响运营上自己流量和卡的销售）。首先，大部分随身wifi，卡和设备是相互绑定的，这通过几个方面实现，物理上，随身wifi使用的是esim芯片，是焊在设备上的，需要一点技术才能取下来；逻辑上，随身wifi上的esim卡绑定了设备的imei号，即使把这个esim卡拆下来改造成普通的sim卡，放到别的设备或手机中也无法使用。而随身wifi设备很多没有卡槽，也无法使用其他的物联网卡，或用户自己的手机卡。<br>
+不过，设备的方案商和生产商，为了方案的通用性，这些限制一般都不是硬件上的。例如，闲鱼上很多人售卖的破解版，就是破解了随身wifi设备，让这个设备支持改串（改imei），增加sim卡槽（有的随身wifi本身带卡槽，默认是禁用的，这种直接破解禁制，启用就可以了），这样就可以装上那种有1.3元/300G套餐的物流量卡了（esim芯片也可以从设备上拆下来，改造成普通的sim卡）。这种破解一般都会去控（也就是删除商家的云控模块），去掉商家的额外限制，让设备可以发挥设备本身和卡本身的最大能力。<br>
+那么从设备中拆出的物联卡是否可以装在手机上使用呢？理论上是可以的。但是，物联网卡和设备imei的绑定关系是在运营商侧的（推断），手机不改imei（改串）肯定是用不了的。目前手机改串都需要root，有一定技术门槛，root后的手机安全性大幅下降，大体上只能用于做随身wifi了，似乎也没有太大的必要，一个破解版的随身wifi也就40~50之间吧。</p>
+<h3 id="高端随身wifi及附带流量卡">高端随身wifi及附带流量卡</h3>
+<p>目前在网上卖廉价随身wifi的都是些小厂商，低资费高流量必然各种猫腻 。但是随身wifi市场也是有正规军的。华为的天际通、联通官方随身wifi、中兴正规设备和流量卡，是比较知名的正规军，价格较贵，但是确实好用。<br>
+以中兴u30 air为例，469元一台。设备上，据网友反馈，其信号好于iphone，高铁上切换速度快，一出隧道就有信号，相比之下 ，手机要好一会。流量上，中兴官方运营的流量卡，支持移动和电信双网络（可选双网或单网），29元/50G/月，或599元一年，月流量1500G。速度基本是所选运营商正规卡速度的上限了。</p>
+<h3 id="正规手机卡（流量）">正规手机卡（流量）</h3>
+<p>闲鱼上200块以内就能买到不少二手5G手机（例如闲搞机公众号推荐的iQOO U3X 、中兴远航30等），专门买一台回来插正规的流量卡开热点，也是可以作为随身wifi使用的。这就最好搭配低价大流量的正规卡了。一般正常渠道办理的手机卡，流量都比较贵。例如我的中国移动卡，119的套餐才20G的流量，10G的流量包居然要30元，而网上大量售卖的正规卡，有的19元就有100多G的流量。<a target="_blank" rel="noopener" href="https://www.kdocs.cn/l/ccHVD9L9nVdI">正规三网大流量卡对比表（实时更新中） (kdocs.cn)</a><br>
+当然，这些卡也有局限性。这些低价大流量的卡，都是运营商获客竞争的产物，通常其原套餐的价格也不低，流量也不多，为了获客，都提供了1~2年的优惠，从而将套餐价格降低，流量大幅提升，很多到期后就没有优惠，开始变得不划算起来，因此被称为年抛卡。这种最好不要当主卡使用，就当专门的流量卡来用，套餐到期就换一张。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="https://twitter.com/happydanye">
+            <span class="icon">
+              <i class="fab fa-twitter"></i>
+            </span>
+
+            <span class="label">Twitter</span>
+          </a>
+      </div>
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="https://t.me/+naBSux0lS9wwNThl">
+            <span class="icon">
+              <i class="fab fa-telegram"></i>
+            </span>
+
+            <span class="label">Telegram</span>
+          </a>
+      </div>
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+      </div>
+  </div>
+</div>
+
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/post/d4cd" rel="prev" title="写给小白的电脑防护指南">
+                  <i class="fa fa-chevron-left"></i> 写给小白的电脑防护指南
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/post/11b7" rel="next" title="聊聊这一周20241221">
+                  聊聊这一周20241221 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Jerome</span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">180k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">2:44</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="/lib/animejs/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+  <link rel="stylesheet" href="/css/hexo-style-withmycss.css">
+
+
+
+
+<link rel="stylesheet" href="/lib/@fortawesome/fontawesome-free/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="/lib/animate.css/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.jerryking.top","root":"/","images":"/","scheme":"Pisces","darkmode":true,"version":"8.17.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="本文也是整理自我近期发在微信公众号上的连载。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="极速量化交易系统">
+<meta property="og:url" content="https://blog.jerryking.top/post/202509181040">
+<meta property="og:site_name" content="Jerome&#39;s Blog">
+<meta property="og:description" content="本文也是整理自我近期发在微信公众号上的连载。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-09-18T02:40:58.000Z">
+<meta property="article:modified_time" content="2025-09-18T02:40:58.000Z">
+<meta property="article:author" content="Jerome">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://blog.jerryking.top/post/202509181040">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://blog.jerryking.top/post/202509181040","path":"post/202509181040","title":"极速量化交易系统"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>极速量化交易系统 | Jerome's Blog</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="Jerome's Blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Jerome's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Jerome的日常随想</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BA%8F%E7%AB%A0"><span class="nav-number">1.</span> <span class="nav-text">序章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#basics-%E5%9F%BA%E7%A1%80"><span class="nav-number">2.</span> <span class="nav-text">basics 基础</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A1%8C%E6%83%85%E7%B3%BB%E7%BB%9F"><span class="nav-number">3.</span> <span class="nav-text">行情系统</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F%EF%BC%88%E4%B8%80%EF%BC%89"><span class="nav-number">4.</span> <span class="nav-text">交易系统（一）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F%EF%BC%88%E4%BA%8C%EF%BC%89"><span class="nav-number">5.</span> <span class="nav-text">交易系统（二）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F%EF%BC%88%E4%B8%89%EF%BC%89"><span class="nav-number">6.</span> <span class="nav-text">交易系统（三）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E4%BA%8EFPGA%E7%9A%84%E6%9E%81%E9%80%9F%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F"><span class="nav-number">6.1.</span> <span class="nav-text">基于FPGA的极速交易系统</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F%EF%BC%88%E5%9B%9B%EF%BC%89"><span class="nav-number">7.</span> <span class="nav-text">交易系统（四）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9E%81%E9%80%9F%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%B5%8B%E8%AF%95"><span class="nav-number">8.</span> <span class="nav-text">极速量化交易系统的测试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%99%AE%E9%80%9A%E6%8A%95%E8%B5%84%E8%80%85%E7%9A%84%E9%87%8F%E5%8C%96%E7%B3%BB%E7%BB%9F%E5%BB%BA%E8%AE%AE"><span class="nav-number">9.</span> <span class="nav-text">普通投资者的量化系统建议</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Jerome"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Jerome</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">71</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.jerryking.top/post/202509181040">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Jerome">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jerome's Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="极速量化交易系统 | Jerome's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          极速量化交易系统
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2025-09-18 10:40:58" itemprop="dateCreated datePublished" datetime="2025-09-18T10:40:58+08:00">2025-09-18</time>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>8.3k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>8 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>本文也是整理自我近期发在微信公众号上的连载。</p>
+<span id="more"></span>
+<h2 id="序章">序章</h2>
+<p>先叠个甲：本文所有内容仅代表个人观点，所有信息仅来自公开领域。</p>
+<p>之前在某司时，极速（高频）量化交易如火如荼，那会儿某司扛着分布式转型的大旗，但市场真正叫座的是极速交易系统。</p>
+<p>民间有一股反对高频量化交易的声音，认为是割韭菜；高频量化交易者则认为高频量化为市场提供了增量资金、流动性，纠正了市场的错误，是合理且存在价值的。</p>
+<p>这个世界上并没有绝对的正确，关键看屁股坐在哪个位置上。</p>
+<p>对于普通投资者来说，都是韭菜，谁割不是割，几万10几万的仓位，几天十几天个把月的交易频率，这不是高频交易的韭菜。</p>
+<p>高频交易割的，是其他短线交易者、高频交易者，大家在这个市场上互割，看谁刀更快。</p>
+<p>不过，一旦股市出现较大的波动，量化就要出来背锅。我觉得，这就是因为量化人少，钱多，属于统战价值不高，但是有有点钱的那种，你不背锅谁背锅？难道让公募基金背锅？保险基金背锅？价值投资（扎堆抱团）背锅？</p>
+<p>我写作本文并非是为了量化洗地，主要是为了记录这一段人生经历，发表一点个人看法，顺便帮读者祛个魅。在佛祖的眼中，众生平等；极速量化，也无非是割韭菜的一种工具，没什么神秘和神奇。</p>
+<p>未完待续。。。</p>
+<h2 id="basics-基础">basics 基础</h2>
+<p>曾经有朋友问过我，怎么搞一个快的交易电脑。文科生对于怎么快，完全没有概念；就算是理工科的外行，对交易系统的认识也比较片面。（叠甲：并非贬低，术业有专攻而已）</p>
+<p>交易系统首先是个系统。这意味着，并不是说买个高配置的电脑，接入券商的极速交易系统等就能增加交易的速度，明白这一点很重要。就像木桶一样，决定交易系统交易速度的，往往是最短的那块木板。</p>
+<p>交易系统简单细分一下：往往是由用户的交易系统、券商的交易系统、交易所的交易系统三大块组成，这三大块之间又通过通信系统来连接交换指令和信息。</p>
+<p>对普通交易者来说，人和通信系统往往是速度的瓶颈。</p>
+<p>人的最快反应时间大概是150ms左右。也就是说，如果投资者手动交易，在他看到显示器上的行情信息形成交易信号，到他点击买入，至少也过去了150ms。如果再考虑到思考判断、调出下单界面等等时间，少说也要10几s。已经有一些普通交易者通过迅投这样的策略平台来做量化交易了，在决策和下单这一块，就可能把时间控制到几百毫秒。</p>
+<p>然后就是通信系统。投资者产生的交易指令，一般是通过互联网传给券商的交易系统（俗称柜台）的。这个延时，通常在几十ms。</p>
+<p>普通的柜台也要花费几十上百毫秒来做验资验券和其他风控检查，再将交易报到交易所。券商将用户的交易指令报到交易所，一般也是通过内部的专线网络。但是很多券商的普通柜台没有部署在交易所机房，这里可能又要耗费几十甚至数百毫秒。</p>
+<p>反向（下行）的行情数据也是一样，要由交易所系统发出，经过券商的系统处理，再发送到用户的终端上。</p>
+<p>可能大家觉得，加起来也就几百毫秒或几秒，看起来都很快呀，甚至人都感觉不到。</p>
+<p>的确，人能感觉到的，都不在这个战场内，就像是个买大小的圈外看客。</p>
+<p>说说核心圈战场的玩法和配置吧。</p>
+<p>用户的策略服务器通过券商放置到交易所机房内，跟券商的极速交易系统、交易所的主机放在一起（这里仅是空间上在一个大楼，网络上是隔离的），交易链路的物理时延在微秒级。</p>
+<p>使用券商的极速交易系统，时延损耗微秒级。</p>
+<p>高主频服务器，指令处理纳秒级。</p>
+<p>如果你以为这就够了，还有更极致的，用1层交换机、FPGA交易和风控系统，把多余的光纤都剪掉…</p>
+<p>美国人为了更快，在两个相隔数千公里交易所之间铺了一条近乎直线的光纤，高价租给高频交易者。</p>
+<p>反向（下行）行情也一样。</p>
+<p>也就是说，普通用户如果跟高频量化交易机构使用同样的交易策略，当交易信号（某个行情信息）产生的时候，普通用户这边还没看到交易信号，高频机构那边交易指令已经提交给交易所了，还玩儿什么玩儿？</p>
+<h2 id="行情系统">行情系统</h2>
+<p>绝大部分量化交易策略，其交易指令都是由行情触发的，谁能够更快的获得行情，谁就抢占了先机。</p>
+<p>但是咱们普通投资者在交易终端（同花顺或者通达信）上看到的并非原始的行情信息，而是加工过的行情信息或指标，既然加工过，就可能丢失了一些重要的原始信息。</p>
+<p>从根本上来说，行情是由交易产生的。交易所主机内所有的挂单、撤单和成交，组成了全量的行情信息。理想状态下，这些信息应该立刻发给全市场关注的人，理想状态下。</p>
+<p>信息的发布是有成本的。</p>
+<p>沪深交易所每天的全量行情数据加起来大概有几十G。现在一台普通的笔记本（512G硬盘）顶多就存个10来天的数据。</p>
+<p>事实上，交易所因为要实时、尽快发布数据，瞬间的峰值流量也是很大的，在基础设施较为落后的年代，交易所没有能力发布全量信息，只能发布快照信息，也就是L1行情信息。</p>
+<p>快照信息就是说，这3s（举例，不一定是3s）中所有的行情信息，我汇总成1条或几条信息发出来，比如成交的平均值，最大值，最小值等等；比如挂盘，我把前五个挡位，每个挡位的挂盘数量加起来，给一个该挡位一共的手数，并且只给前5个挡位的数据，后面的不给。等等。</p>
+<p>大概是201x年以后吧，基础设施完善了，量化交易出现了，对行情数据的速度和丰富度有更多的要求，两大交易所开始陆续推出了L2行情，四大期货交易所也开始提供深度行情。</p>
+<p>但是L2（或者说深度行情）的定义，在各个交易所是有差异的。一开始深交所提供的比较全，包括了逐笔委托和逐笔成交；上交所一开始只有逐笔成交好像，后来也在某个时间点提供了；期货交易所不太确定，似乎一直都是快照信息，只是提升了发布的频率，从3s变成500ms？增加了一些信息，例如从5档变成10档。</p>
+<p>L2一般都是要付费的。行情信息收费是国际惯例，国内L1行情免费，不能说仅此一家，也是世间少有。当年我第一次在朋友家看港股行情，他打开一个网站一会刷新一下，然后跟我说这还是延迟15分钟的行情，要看实时行情要交钱。</p>
+<p>当然，国内交易所把行情卖给信息服务商（例如东财）或者券商，还是收费的。只是L1行情是一笔固定的年费，也不贵，券商们自己承担了，没有额外再向用户收取。而L2行情，交易所是按人头收费的，券商有额外的成本，并且这也是差异化服务的抓点，所以普通用户就需要缴纳L2行情费用，交易量大的vip客户可以免，实际上是券商承担了成本，作为增值服务提供给高端客户。</p>
+<p>交易所对外发布的是全量的行情数据，通过二进制方式进行编码，显然不适合全部发到用户终端。因此券商从交易所拿到全量行情信息后，会通过一台行情服务器（有的叫转码机），转换成适合客户端订阅的数据格式（可能是json，也可能还是二进制），根据客户端的订阅关系，只推送（或者由客户端拉取）客户端订阅的那部分行情数据，例如自选股页面的几只自选股的最新价；股票分时图中该股票的分时价格、K线数据等。顺便说一下，交易所原始数据没有K线数据，K线通常是券商服务器根据原始行情信息计算出来的指标，其他很多数据也是类似。</p>
+<h2 id="交易系统（一）">交易系统（一）</h2>
+<p>行情我随便聊聊，就写了 1000 多字，这也只是皮毛的皮毛，初步了解一下也够了。有感兴趣的后面再聊细一点。</p>
+<p>现在聊聊交易系统。行情系统虽然复杂，但在券商这里相对简单，标准化度高，找供应商采购一套甚至多个供应商采购多套，日常维护一下就好。行情也没有头疼的数据同步问题。（有些策略涉及保序，多路取优，会复杂一点）。但交易系统要求就高了，数据错误、指令报错、业务中断，都将面临实际的经济损失和监管处罚。</p>
+<p>我刚入行的时候有个疑问，投资者直接报单到交易所交易不就好了，为啥非要有券商（经纪商）呢？（后来的加密货币交易所，果然就没有中间商）</p>
+<p>这主要是历史问题。以前信息基础设施没有这么发达，交易所没有能力服务大范围的客户，必须依靠经纪商拓展、服务客户；经纪商还要早于交易所出现，最开始，交易所的出现是为了便于经纪商之间的交易。国内沪深交易所，券商还是他们的股东呢。</p>
+<p>最近有一则美国的新闻，一些有席位的交易员跟交易所打官司，要求保证他们交易席位的特权 (折扣)，而交易所早就把交易搬到电子主机中，给这些 Old Fasion 的交易员们留下空荡荡的交易大厅，而给到电子经纪商的折扣，大于给这些老席位的折扣。交易所没有息事宁人，积极抗诉，据说法官已经判了交易所胜诉。Old Fasion 就慢慢老去吧。</p>
+<p>以上是题外话。</p>
+<p>反正现在就这么个情况。交易所只接受会员单位（券商）的交易指令，并且交易所也不验证指令发起人是否有足够的钱（买入）或券（卖出）。这部分工作就交给券商来完成，交易所只在每天交易结束后，联合中登公司，跟会员单位做总的轧差。</p>
+<p>所以，券商就需要记录他的客户托管在他这里的股票、存入的保证金。在客户发起交易指令时，验证客户是否有足够的资金或股票，还有一大堆其他风险控制方面的检查。</p>
+<p>以前券商的交易系统都是基于数据库的。前面说了，数据最重要，数据错了就要赔钱。而券商，乃至 hs、jz 这样的大软件开发商，也没有能力，也没有必要自己搞一套数据管理系统，因为这个金融级别的数据管理系统，已经牢牢的被国外厂商占据了生态位。人家 80 年代大发展的时候，国内绝大部分人都没接触过计算机。</p>
+<p>所以以前的国内金融领域的软件开发者，基本都是基于（面向）数据库的开发者。</p>
+<p>金融级别的数据管理方案，根子还是上世纪 8，90 年代的基础，普遍基于磁盘来保存数据。磁盘读写的速度慢，一次交易指令可能涉及好几次的磁盘读写，因此，传统的券商交易系统（俗称柜台），往往都是毫秒级甚至秒级的响应速度。</p>
+<p>这肯定不能满足极速量化交易系统的要求</p>
+<p>随着科技的进步，各种内存数据库也快速发展。一些基于内存数据库的极速交易系统也逐步涌现。一些厂商用自己的内存数据结构来维护用户的资产状态，还有厂商推出硬件（FPGA）交易系统，在芯片中维护用户资产状态。</p>
+<h2 id="交易系统（二）">交易系统（二）</h2>
+<p>极速量化交易系统，整体来看，也可分为三块：客户自己的策略系统（以及管理系统）、券商的极速交易柜台、交易所的报盘前置机。</p>
+<p>客户自己的交易系统通常又有PMS（组合管理系统）、OMS（订单管理系统）、EMS（执行管理系统），但这都是概念上的，我刚开始也常常分不清楚，有些客户也会问，你们系统是pms还是oms还是ems。实际上，实际操作中，很多厂商的实现并没有严格的按这些概念去区分。一个系统中可以既有一部分pms的功能，也有oms，也有ems。像恒生的o32，有客户当资管用，似乎也能在券商那里当柜台用。</p>
+<p>简单的量化就一个策略平台就可以了，散户们最常见的就是迅投的QMT系统。这个系统用户用Python写程序，获取行情，提交订单。期货行业占主导的就是ctp系统了，现在搞量化股票的大佬，很多都是以前搞量化期货的。</p>
+<p>券商这边，就给追求极速量化交易的客户准备了极速交易柜台。极速交易柜台普遍抛弃了传统数据库（配合去IOE行动），在内存中维护数据，有些也会使用商用的内存数据库，但也有不少是自己维护数据结构。</p>
+<p>自己维护数据结构有好处也有坏处，好处是如果开发的水平高，可以去掉商用内存数据库的冗余部分，专门为交易做极致的数据结构；缺点是通用性不强，维护人员还需要大量的学习，但是单一厂商不一定能持续发展，一旦厂商死掉或放弃这个产品，维护人员投入的大量学习成本就归零了；另外很多厂商其实也没有那么高的开发水平，即使去掉了冗余，性能和稳定性可能还不如开源的内存数据库或商用的内存数据库。</p>
+<p>在使用内存数据后，因为不需要跟硬盘交互，速度会有显著提升（一般至少会到两位数毫秒级）。当竞争进入个位毫秒、微秒级时，就不仅仅只依靠内存数据技术了，操作系统网络层的延时就开始敏感了，这时就出现了各种网络加速技术。</p>
+<p>网络加速技术的两个代表：RDMA和onload。简单点说就是绕过操作系统协议栈，硬件直接跟用户程序交互数据。【注1】</p>
+<p>所以大家去看现在基于X86通用PC的极速交易柜台，相比传统柜台，核心技术就两点：内存数据结构或内存数据库、以及网络加速技术。</p>
+<p>【注1】：传统网络编程，都是由操作系统来管理、驱动硬件。用户程序（例如量化交易程序）调用操作系统提供的的API，把数据拷贝到操作系统管理的内存区域，操作系统在将数据传给硬件，中间要经过操作系统至少一次（可能很多次）数据转移，耽误了时间。</p>
+<h2 id="交易系统（三）">交易系统（三）</h2>
+<h3 id="基于FPGA的极速交易系统">基于FPGA的极速交易系统</h3>
+<p>现代通用计算机架构本质上是个分时系统。什么意思呢？就是cpu频率很高（例如3.0GHz，也就是说cpu每秒钟可以计算30亿次【注1】），把这些计算量分给10个程序使用，每个程序每秒也可以分到3亿次，再加上快速的切换，就好像这些程序在同时执行一样。事实上，这些程序是根据操作系统的调度程序，获得cpu的时间片，分时在cpu上运行的。</p>
+<p>问题来了，用户程序并不能独占cpu的计算资源，它在执行计算任务时，有可能被操作系统切出去，过段时间再切回来继续执行。因此，现代通用计算机（例如x86），虽然很快，但任务执行的时间是不稳定的。</p>
+<p>虽然有很多种技术，例如绑核来解决这些问题，但是架构决定了X86类型的通用服务器，在交易时延上就是不稳定。</p>
+<p>有时候，又稳又快，比单纯的快更重要。</p>
+<p>因此基于FPGA芯片的极速交易柜台，交易系统就出现了。</p>
+<p>这种交易系统，指令在FPGA芯片上运行，没有分时，没有切换，指令执行时间确定。虽然FPGA的主频没有X86CPU快，但是用户程序独占芯片计算资源，所以可能还要快于通用CPU，最起码，是稳定的快。</p>
+<p>当然也不是没有代价的，FPGA使用硬件编程技术，比较底层，开发效率不高，对开发人员的要求高，相应工资等成本也高；程序的修改、调试都比较难；如果业务太复杂，开发难度指数上升，就不太具备经济可行性了。所以目前期货领域用的比较多，证券领域比较少用到。</p>
+<p>哦，对了，行情解码，也有不少用FPGA来做的，解码程序业务逻辑比较固定，适合FPGA。</p>
+<p>【注1】：准确的说，每秒30亿个时钟周期，很多计算不只使用一个时钟周期，本文为科普文，细节上并不追求精确，大意而已。</p>
+<h2 id="交易系统（四）">交易系统（四）</h2>
+<p>最挣钱的策略，往往是最简单的策略。</p>
+<p>我不是很同意这句话，因为他往往用特例来简单化复杂的现实，因为若干个这样的特例，人们往往把胜利简单化，以为掌握了一两个窍门，就可以打败别人辛苦构建的系统，长期的布局、坚持和忍耐。最典型的就是那个流传甚广的，老农民（老工人？）用吹风机解决了好多博士解决不了的流水线的空盒子的问题。平凡的智慧或许偶尔能打败系统的力量，但是历史表明，强国靠的还是工业和组织的力量。</p>
+<p>不过曾经确实有个很简单的量化策略，简单到我一开始是不相信的：打板策略。我不是搞策略的，对量化策略并不太懂。有一次骑车，有个朋友问我怎么搞一个做AI量化交易系统的电脑。我好奇问他要跑什么策略，他大概跟我说了一下，就是买入尾盘涨停的股票，第二天开盘卖出。</p>
+<p>这策略让我想起了当年的涨停板敢死队，我刚问了下AI，这个策略的底层逻辑是什么？胜率高不高？AI告诉我，这个策略底层是利用了普通投资者的行为偏差和信息滞后：利用“有限关注”偏差，博弈“惯性效应”。AI说单纯打板胜率低于50%（45%），想赚钱还需要其他指标。</p>
+<p>曾经有家券商找过我，要做事前风控。原因是他们的大客户就是打板策略，要求在开盘的时候最快冲进去，但是这个客户可能冲的太快，频率太高，容易惹来交易所的监管函。Anyway，这个策略这么盛行，效果看来是毋庸置疑的；AI说近来监管趋严，这种策略赚钱越来越难，姑且听他的吧。</p>
+<p>借这个点聊聊怎么才能冲在最前。</p>
+<p>简化点看，现在交易都是在交易所撮合主机中进行撮合交易的，外界是不可能直连交易所撮合主机的，大家只能把单报送给交易所前置机（前置机也不见得是直连撮合主机的，交易所内部的系统也比较多，披露的信息少），姑且认为，谁先把单子报到交易所前置机，谁就排在前面。</p>
+<p>交易所几十上百台前置机，可能分布在全国各地，大家都在9：15分发起冲锋，这先后顺序跟赚不赚钱有密切的关系，交易所如何平衡呢？偏向任何一家，都会被喷的体无完肤。</p>
+<p>还有，谁说一定要9：15冲锋呢？我提前跑是不是有优势？</p>
+<p>为了解决公平性问题，交易所也是有办法的。</p>
+<ol>
+<li>设定敲门机制，我9：15分准时开门，早来的不收，直接丢；</li>
+<li>几百台前置机，我随机轮询（保证都询到，但是哪个第一个询，随机），今天你占便宜，明天他占便宜。</li>
+</ol>
+<p>交易所必须考虑市场公平，券商只需要服务好客户。SSSVIP大客户给单独的报盘通道，这个通道内保证只有该客户的单子，直送交易所参加随机轮选；普通VIP客户排在普通客户前面，先送vip客户的单子；普通客户的单子，就只好等SSSVIP和VIP的单子发完了，再去撮合主机碰碰运气吧。</p>
+<p>这也不能怪券商，报盘通道是有成本的，普通散户出不起这个成本。</p>
+<h2 id="极速量化交易系统的测试">极速量化交易系统的测试</h2>
+<p>大家都说自己的极速交易系统是最快的，作为客户，怎么选呢？</p>
+<p>这个领域太小众，没有中保研那样的官方或半官方或行业标准组织来组织测试。即使是券商这样的大机构，绝大部分也是缺少测试能力的，可能头部券商有这个实力，但是有没有测试的决心和动力，是否收到其他方面的干扰，又是另外一回事儿了。</p>
+<p>因此通常是中小券商看大券商用哪家，普通客户只能靠券商的推荐和朋友的口碑。</p>
+<p>一些真正依赖交易速度来盈利的私募机构，显然不能满足于这样的结果。他们的技术人员开发了一套基于实际效果的测试方法（成本有点贵）。</p>
+<p>方法大概是这样的：</p>
+<ol>
+<li>在多家拥有极速交易系统的券商有分仓；</li>
+<li>测试的时候，每家券商的通道发几笔订单（例如500笔），在同一家券商的极速行情系统上订阅该股票的逐笔行情；</li>
+<li>在测试客户端，用接收到每笔交易的逐笔行情的时间搓，减去发送这笔交易的时间搓，得到该笔交易整个上行（发交易指令）+下行（行情获取）的时间。记录这500笔订单的极大值、极小值、平均值和50分位、80分位、90分位、99分位的值</li>
+<li>把所有券商的所有通道的值汇总起来进行对比。</li>
+</ol>
+<p>这是目前我见过的最具可信度的测试方法，不过实施起来成本很高，困难较多。</p>
+<p>其他常用的方案还包括软件打点和硬件镜像流量解析的方法。</p>
+<p><strong>软件打点</strong>：软件打点要求在发单软件发单和收单的时候打上时间戳，刚才说的私募机构技术上也是这个方案。但是，普通的软件打点测试方案，一般都是厂商提供打点方案，交易所侧用挡板网关，有两个问题：1. 厂商自己打点，可信度不高；2. 跟实际场景有差异，不能完全反应实际场景的情况。</p>
+<p><strong>硬件镜像流量</strong>：有些客户不信任厂商软件打点的方案，通过在交换机上镜像流量，依托交换机的时间戳，来获得公平公正的系统时延。这种方法也存在问题：1. 要想对应上下行的ip流量，还需要厂商的支持和配合（造假难度高一点）；2. 只能测试经过交换机那一段的时延，不能测试端到端的时延。 有些厂商为了应对这种测试，把一些通常由系统做的计算，放到客户端的SDK上，显著减少了进出交换机的时延，但是整个链路的时延反而增加了。</p>
+<p>总结一下，就是没有完美的测试方案，即使是使用成本较高的现网测试方案，也存在结果变化较大的可能，系统本身的抖动、网络、优化、交易所侧的不可控因素等，都会改变结果。</p>
+<h2 id="普通投资者的量化系统建议">普通投资者的量化系统建议</h2>
+<p>前面写了这么多，其实对普通投资者来说，就是看看机构玩家们的水平。普通投资者没有这个资源和能力去搭这样的平台。</p>
+<p>如果你看完之后，打消了做高频量化投资者的念头，那挺好的，这个领域确实不太适合普通投资者。</p>
+<p>但是，量化投资并非都是高频量化。量化的作用，还可以是克服人类的情感偏差、自律能力不足，把投资者从盯盘、下单这些机械的工作中解放出来。事实上，我建议每个人都尽量通过量化的方法进行投资。</p>
+<p>普通投资者者的量化系统可以很简单，一台笔记本+一台小主机就可以了。</p>
+<p>笔记本用来编写调试代码，小主机用来跑程序。</p>
+<p>笔记本主流的就可以了，我甚至还在用10几年前的t430s。</p>
+<p>普通投资者的策略一般也不太复杂，所以普通的小主机也够了，关键是稳定性。我建议买大厂（dell、联想、hp）的1L小主机，小巧不占地方，功耗一般也不高，长期运行质量有保证。现在普通家用性能都过剩，记得硬盘一定要是SSD的。</p>
+<p>有些土豪想在自己的主机上跑大模型，用大模型来生成策略。我个人觉得没必要。除非你比较专业（专业的人就不要看这篇了），否则普通投资者还是把精力放在思考投资策略上吧。自己安装维护一套大模型挺费事儿的，其实用互联网上的免费甚至收费大模型服务就够用了。至于策略的保密性，咱散户真不用纠结。</p>
+<p>有了AI辅助后，我发现做量化的门槛又低了很多。我以前很不喜欢代码中的一些低级但是又不得不做的工作，例如一些常规的低级代码（遍历文件啊，类型转换啊），以及一些语法错误的调试，现在借助AI，可以快速的生成这些辅助代码，完成语法类错误的调试，使得投资者可以专心于策略代码的设计和编写。</p>
+<p>就这样吧。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="https://twitter.com/happydanye">
+            <span class="icon">
+              <i class="fab fa-twitter"></i>
+            </span>
+
+            <span class="label">Twitter</span>
+          </a>
+      </div>
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="https://t.me/+naBSux0lS9wwNThl">
+            <span class="icon">
+              <i class="fab fa-telegram"></i>
+            </span>
+
+            <span class="label">Telegram</span>
+          </a>
+      </div>
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+      </div>
+  </div>
+</div>
+
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/post/202509181023" rel="prev" title="阅读笔记-Tiny Experiments">
+                  <i class="fa fa-chevron-left"></i> 阅读笔记-Tiny Experiments
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/post/202509181045" rel="next" title="阅读笔记-投资的常识">
+                  阅读笔记-投资的常识 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Jerome</span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">180k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">2:44</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="/lib/animejs/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+</body>
+</html>
