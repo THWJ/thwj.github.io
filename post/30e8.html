@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+  <link rel="stylesheet" href="/css/hexo-style-withmycss.css">
+
+
+
+
+<link rel="stylesheet" href="/lib/@fortawesome/fontawesome-free/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="/lib/animate.css/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.jerryking.top","root":"/","images":"/","scheme":"Pisces","darkmode":true,"version":"8.17.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="虞美人·听雨[宋]蒋捷 少年听雨歌楼上，红烛昏罗帐。壮年听雨客舟中，江阔云低、断雁叫西风。而今听雨僧庐下，鬓已星星也。悲欢离合总无情，一任阶前、点滴到天明。 竹山先生这首词，鬓已星星就算老人，这么说来我也算老人了，白头发更多的Frank同学，更是很早就算老人了。 不过我向来是不服老的，但是因为长时间使用电脑和手机，眼睛和脑子（安德斯 2022）都有点影响。对着电子产品久一点就开始难受。我们做解决方">
+<meta property="og:type" content="article">
+<meta property="og:title" content="老眼昏花-打造听力阅读系统">
+<meta property="og:url" content="https://blog.jerryking.top/post/30e8.html">
+<meta property="og:site_name" content="Jerome&#39;s Blog">
+<meta property="og:description" content="虞美人·听雨[宋]蒋捷 少年听雨歌楼上，红烛昏罗帐。壮年听雨客舟中，江阔云低、断雁叫西风。而今听雨僧庐下，鬓已星星也。悲欢离合总无情，一任阶前、点滴到天明。 竹山先生这首词，鬓已星星就算老人，这么说来我也算老人了，白头发更多的Frank同学，更是很早就算老人了。 不过我向来是不服老的，但是因为长时间使用电脑和手机，眼睛和脑子（安德斯 2022）都有点影响。对着电子产品久一点就开始难受。我们做解决方">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s3.ifanr.com/wp-content/uploads/2024/06/light9-1.jpg!720">
+<meta property="og:image" content="https://cdn.shopifycdn.net/s/files/1/0624/9165/6356/files/XKT21-5.jpg?v=1715526263&amp;width=1000">
+<meta property="article:published_time" content="2024-06-20T02:30:00.000Z">
+<meta property="article:modified_time" content="2025-10-30T09:08:26.412Z">
+<meta property="article:author" content="Jerome">
+<meta property="article:tag" content="工具">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s3.ifanr.com/wp-content/uploads/2024/06/light9-1.jpg!720">
+
+
+<link rel="canonical" href="https://blog.jerryking.top/post/30e8.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://blog.jerryking.top/post/30e8.html","path":"post/30e8.html","title":"老眼昏花-打造听力阅读系统"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>老眼昏花-打造听力阅读系统 | Jerome's Blog</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="Jerome's Blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Jerome's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Jerome的日常随想</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%98%E7%94%B1"><span class="nav-number">1.</span> <span class="nav-text">缘由</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%B9%E6%A1%88"><span class="nav-number">2.</span> <span class="nav-text">方案</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E5%A4%87"><span class="nav-number">2.1.</span> <span class="nav-text">设备</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6"><span class="nav-number">2.2.</span> <span class="nav-text">软件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%86%85%E5%AE%B9"><span class="nav-number">2.3.</span> <span class="nav-text">内容</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93%E3%80%81%E5%BB%BA%E8%AE%AE%E5%92%8C%E5%85%B6%E4%BB%96"><span class="nav-number">3.</span> <span class="nav-text">总结、建议和其他</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%87%E6%B3%A8"><span class="nav-number">4.</span> <span class="nav-text">备注</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="nav-number">5.</span> <span class="nav-text">参考文献</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Jerome"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Jerome</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">71</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.jerryking.top/post/30e8.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Jerome">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jerome's Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="老眼昏花-打造听力阅读系统 | Jerome's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          老眼昏花-打造听力阅读系统
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-06-20 10:30:00" itemprop="dateCreated datePublished" datetime="2024-06-20T10:30:00+08:00">2024-06-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-10-30 17:08:26" itemprop="dateModified" datetime="2025-10-30T17:08:26+08:00">2025-10-30</time>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>2.3k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>2 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p style="text-align: left">虞美人·听雨<span style="font-size:60%;" >[宋]<abbr title="号竹山先生">蒋捷</abbr></span><br> 少年听雨歌楼上，红烛昏罗帐。<br>壮年听雨客舟中，江阔云低、断雁叫西风。<br>而今听雨僧庐下，鬓已星星也。<br>悲欢离合总无情，一任阶前、点滴到天明。</p>
+<p>竹山先生这首词，鬓已星星就算老人，这么说来我也算老人了，白头发更多的Frank同学，更是很早就算老人了。</p>
+<p>不过我向来是不服老的，但是因为长时间使用电脑和手机，眼睛和脑子（安德斯 2022）都有点影响。对着电子产品久一点就开始难受。我们做解决方案出身的，任何问题都下意识的寻找解决方案。</p>
+<p>以下是我目前使用的方案，我称之为一个听力阅读系统。</p>
+<span id="more"></span>
+<p><strong>TLDR</strong></p>
+<p>系统目的：适当通过耳朵来获取资讯和知识，减少眼睛的使用，保护视力，有效缓解网络沉迷。</p>
+<p>硬件设备：安卓手机、挂耳蓝牙耳机；进阶可增加降噪耳机</p>
+<p>软件：小宇宙、Spotify、NewPie、tts-server-android、AIreader</p>
+<p>内容：各类电子书（epub）、优秀播客、优秀视频节目（后台播放</p>
+<h2 id="缘由">缘由</h2>
+<p>人们不停的刷手机，往往是为了抗拒无聊，不知道人类为何如此害怕无聊。手机看多了有很多危害，其中有一项就是对眼睛的伤害。为了减少对眼睛的伤害，我们也想了很多办法，例如防蓝光眼镜、号称护眼的屏幕，屏幕调色软件，以及电纸屏幕。这些我都使用过。不过因为工作和娱乐都跟电脑、手机相关，每天用眼还是太多，出现了排斥现象，心里上对对着屏幕这件事儿就有了排斥，但是大脑又需要抗拒无聊，人为了跟上这个时代也需要输入信息。于是就有了这个方案。</p>
+<h2 id="方案">方案</h2>
+<p>方案可以很简单，不少人上下班开车听广播，听小说，都是让眼睛得到休息的同时，获得了信息输入，减少了无聊。但是既然称之为方案，就会略微高阶一点。</p>
+<h3 id="设备">设备</h3>
+<p>主设备自然就是手机了 ，这么方便的工具，没理由不利用。突然想起最近爱范儿发了一篇介绍「笨手机」大法NW-WM1AM2手机，情怀这东西真是适合用来收割。这么个跟我淘汰N年的荣耀3C手机同样功能的机子要价799美金（人民币5800），闲鱼上40块钱淘个二手手机一样可以实现这个大法手机同样核心卖点：不能上网，只能电话和听歌。</p>
+<p><img src="https://s3.ifanr.com/wp-content/uploads/2024/06/light9-1.jpg!720" alt=""></p>
+<p>一般我会带个备机专门用于工作以外的事情，例如LG的G7手机，HIFI手机，音质很好。</p>
+<p>耳机则是最近发现的这种耳机：<strong>魔声xkt21</strong>，挂耳蓝牙耳机。我有降噪入耳耳机、半入耳耳机、颈挂耳机、空气传导耳机，就差骨传导耳机没用过了。这种挂耳耳机我比较适应，带着耳朵上几乎无感，耳机有5小时续航，加上充电仓就更久了，半周应该没什么问题。入耳耳机带20分钟就有点难受，半入耳好一点，30多分钟也开始难受；颈挂的空气传导耳机后面总感觉有点东西，仰头的时候有点挂碍，并且续航时间不足，也不能单耳使用。这些缺点挂耳耳机都克服了。不过也不是每个人都能适应，我算比较挑的，但是可以适应这个。唯一的问题就是环境吵杂的地方听不清，只能上降噪了。</p>
+<p><img src="https://cdn.shopifycdn.net/s/files/1/0624/9165/6356/files/XKT21-5.jpg?v=1715526263&amp;width=1000" alt=""></p>
+<p>一般我会常备一个有线耳机，以备不时之需。另外有线耳机音质要好很多，闲暇欣赏下音乐。</p>
+<h3 id="软件">软件</h3>
+<p>软件小宇宙就很不错，专门的播客app，体验好，内容也丰富。Spotify用来听一些大陆没有的播客；除此以外，最近我还发现了NewPie这个app，油管的一些视频内容，可以用这个App来后台收听，就省的再开油管会员了。</p>
+<h3 id="内容">内容</h3>
+<p>内容这一块值得好好说一说，也是我写本片文章的一个动机之一。我就是在看了两天网络小说之后发现 眼睛和脑子实在受不了，才决定进一步开发音频输入的。</p>
+<p>得益于AI的发展，任何文字内容现在都可以以音频的形式播放。小说是最合适拿来听的文字了。不过现在很多国内的好的听书软件都收费了，尤其是讯飞，价格特别贵，但是其AI的领先优势却丢了，不知道讯飞搞了这么多钱都干嘛去了。现在免费的文本转语音，效果不错的就是微软Edge提供的大声朗读，可惜 Edge 现在不支持epub格式的电子书了。Github上有人开发了一个TTS－server【备注1】的App，可以替代系统本身的TTS服务，调用微软的线上TTS服务（也就是Edge所使用的TTS），效果很不错。随着AI的进一步发展，预计很快就会出现人类几乎无法区分是真人还是AI朗读的TTS服务了。（应该说已经有了，就是成本还比较高，目前没有免费的公开服务）</p>
+<p>除了书以外，优秀的播客也是获取知识和信息的好的渠道。国外有很多优秀的播客内容，国内的偏少，我觉得不错的有：忽左忽右、声东击西、硅谷101、科技早知道；以及需要科学上网的 王局拍案、不明白播客等。有些不错的视频节目没有出音频版，其实也可以后台播放当音频版的节目，例如睡前消息（目前被暂停，可以听同个工作室做的小黛晨读、黑岛之类的）、二爷故事、小岛大浪吹、小琳说等。</p>
+<h2 id="总结、建议和其他">总结、建议和其他</h2>
+<p>以前我睡觉前可能会刷一会儿手机，容易越刷越兴奋；现在尽量改为听音频，然后发现跟看书一样，都有催眠的神效，不伤眼睛还催眠，一举两得。就是容易第二天起来完全不记得晚上听了什么。</p>
+<p>这个方案的缺点就是不太适合严肃类阅读。严肃类阅读建议还是通过电纸书+纸笔（做笔记）来进行。网文小说，通俗类的文本，实在是没有必要浪费眼力，建议尽量采用这个方案。</p>
+<p>哈哈，写完发现，有部分内容跟之前的写的<a href="https://blog.jerryking.top/2024/06/03/20240603-%E5%8D%87%E7%BA%A7%E7%89%88%E9%98%85%E8%AF%BB%E6%96%B9%E6%A1%88-%E5%90%AC%E4%B9%A6/">升级版阅读方案-听书 | Jerome’s Blog</a>重叠了，这算是个迭代升级的方案吧，好在这个博客只有我一个读者，不担心。</p>
+<h2 id="备注">备注</h2>
+<ol>
+<li><a target="_blank" rel="noopener" href="https://github.com/jing332/tts-server-android">GitHub - jing332/tts-server-android: 这是一个Android系统TTS应用，内置微软演示接口，可自定义HTTP请求，可导入其他本地TTS引擎，以及根据中文双引号的简单旁白/对话识别朗读 ，还有自动重试，备用配置，文本替换等更多功能。</a></li>
+</ol>
+<h2 id="参考文献">参考文献</h2>
+<p>[1] 安德斯·汉森. 手机大脑.  任李肖垚. 北京:北京联合出版社,2022</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="https://twitter.com/happydanye">
+            <span class="icon">
+              <i class="fab fa-twitter"></i>
+            </span>
+
+            <span class="label">Twitter</span>
+          </a>
+      </div>
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="https://t.me/+naBSux0lS9wwNThl">
+            <span class="icon">
+              <i class="fab fa-telegram"></i>
+            </span>
+
+            <span class="label">Telegram</span>
+          </a>
+      </div>
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+      </div>
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag"># 工具</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/post/1923.html" rel="prev" title="努力陷阱">
+                  <i class="fa fa-chevron-left"></i> 努力陷阱
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/post/5262.html" rel="next" title="Voicenotes-不错的App 有意思的开发者">
+                  Voicenotes-不错的App 有意思的开发者 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Jerome</span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">180k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">2:44</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="/lib/animejs/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+</body>
+</html>
