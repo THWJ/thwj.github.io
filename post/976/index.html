@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+  <link rel="stylesheet" href="/css/hexo-style-withmycss.css">
+
+
+
+
+<link rel="stylesheet" href="/lib/@fortawesome/fontawesome-free/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="/lib/animate.css/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.jerryking.top","root":"/","images":"/","scheme":"Pisces","darkmode":true,"version":"8.17.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="一个成本较低，但是兼具软路由的多种网络功能和Mesh Ap的无线漫游能力的方案。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="分享一个低成本软路由加Mesh Ap的组网方案">
+<meta property="og:url" content="https://blog.jerryking.top/post/976/">
+<meta property="og:site_name" content="Jerome&#39;s Blog">
+<meta property="og:description" content="一个成本较低，但是兼具软路由的多种网络功能和Mesh Ap的无线漫游能力的方案。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img-1255715845.cos.ap-guangzhou.myqcloud.com/img/202406101348133.png">
+<meta property="article:published_time" content="2024-06-10T05:10:00.000Z">
+<meta property="article:modified_time" content="2025-10-30T09:08:26.268Z">
+<meta property="article:author" content="Jerome">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-1255715845.cos.ap-guangzhou.myqcloud.com/img/202406101348133.png">
+
+
+<link rel="canonical" href="https://blog.jerryking.top/post/976/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://blog.jerryking.top/post/976/","path":"post/976/","title":"分享一个低成本软路由加Mesh Ap的组网方案"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>分享一个低成本软路由加Mesh Ap的组网方案 | Jerome's Blog</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="Jerome's Blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Jerome's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Jerome的日常随想</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9C%80%E6%B1%82"><span class="nav-number">1.</span> <span class="nav-text">需求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8E%9F%E6%9D%A5%E6%96%B9%E6%A1%88%E5%8F%8A%E9%97%AE%E9%A2%98"><span class="nav-number">2.</span> <span class="nav-text">原来方案及问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%B0%E6%96%B9%E6%A1%88"><span class="nav-number">3.</span> <span class="nav-text">新方案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83"><span class="nav-number">4.</span> <span class="nav-text">参考</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Jerome"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Jerome</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">71</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.jerryking.top/post/976/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Jerome">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jerome's Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="分享一个低成本软路由加Mesh Ap的组网方案 | Jerome's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          分享一个低成本软路由加Mesh Ap的组网方案
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-06-10 13:10:00" itemprop="dateCreated datePublished" datetime="2024-06-10T13:10:00+08:00">2024-06-10</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-10-30 17:08:26" itemprop="dateModified" datetime="2025-10-30T17:08:26+08:00">2025-10-30</time>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>1.9k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>2 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>一个成本较低，但是兼具软路由的多种网络功能和Mesh Ap的无线漫游能力的方案。</p>
+<span id="more"></span>
+<h2 id="需求">需求</h2>
+<p>简单的家庭网络直接买可以组mesh的无线路由器就好了。例如我使用的中兴E2633，目前闲鱼80左右一个。房子小的买一个，房子大的买两个三个四个五个都可以。只要家里装修的时候预留了有线网口，就算家里是三百平的大house，每个房间丢一个也能保持全家的网络信号都很好。<br>
+但是像我这样家里有Nas，以及各种家庭网络服务的，就对家庭网络提出了更高的要求。 例如为了保证内外网通过域名访问家中服务一致性的需求，需要在内网做DNS劫持。 为了更好地利用IPV6直连服务等能力，同时保证内网的安全， 就需要在路由器上开通特定的iPV6的端口（没有公网IPV4iP）。</p>
+<h2 id="原来方案及问题">原来方案及问题</h2>
+<p>现在普通的无线路由器虽然大部分有mesh功能，但是很多都缺少dns劫持功能和ipv6 防火墙配置功能（只能全开或全关）。<br>
+一些高端的无线路由器，例如华硕的AiMesh路由好像能够满足我的需要。但是，我另一方面还希望以较低的成本解决上述需求，华硕全套方案有点贵了。<br>
+手上有两个之前玩儿剩下的 NewWiFi3 路由器，并且都已经刷了openWRT系统。 这个路由器路由性能不错，但是无线系统较差， 关闭WiFi，当有线路由使用很不错。 我又买了两个E2633， 专门做AP使用。<br>
+但是E2633正常方式接在NewWiFi3下面的话， 就会形成不同的子网。 局域网设备互相访问存在一些问题。因此，长期以来，我都是把 E2633关掉dhcp，将网线插在Lan口跟主路由的LAN口连接，当简单的AP使用。<br>
+这种状态下无法使用E2633的mesh功能。 需要人工切换。 经常人工切换信号，确实有点难受，因此最近花了点时间想恢复E2633的mesh功能，至于内网互通的问题，另想办法。 没想到恩山的一篇文章。 让我看到了新希望。</p>
+<h2 id="新方案">新方案</h2>
+<p>方案组网图如下：<br>
+<img src="https://img-1255715845.cos.ap-guangzhou.myqcloud.com/img/202406101348133.png" alt=""><br>
+近日思念mesh切换的便利，于是想把家里的e2633的mesh用起来，用一个2633（记作A），先重置，wan口连主路由，配置无线ssid和密码，配置成主mesh。然后另一个2633 （记作B） 连A的lan口，配置成副mesh路由（配置手动似乎能很快识别），但是这样就变成3级网络了，接在主路由下面的是一个网段，接在A下面的是一个网段，接在B下面的又是一个网段。<br>
+恩山上一个帖子【参考1】里面有个人说了一个办法，我尝试了一下，似乎可行：在以上AB都打开mesh并成功建立mesh的基础上，关闭A的Dhcp，将插在A wan口的网线改插到Lan口（也就是A的lan口通过网线跟主路由Lan对接），B也是将Lan跟A的lan口连接，Mesh还在，所有设备都能上网。但是B还是给下面的设备分配了ip，并且设置成副mesh后，没有关闭dhcp的选项。于是先关闭了B的mesh，把dhcp选项展现出来，关闭掉dhcp，再改回副mesh ap。然后在各个房间测试ok，所有设备都是从主路由DHCP获取到ip，在同一个网段。<br>
+总结：因此正确的做法应该如下：<br>
+1. 主mesh ap 先正常配置（wan口接主路由的lan口），wan口配置dhcp获取ip，本机ip为192.168.10.1（默认，也可以修改，不要跟上级同一个网段），开mesh，设置ssid和密码<br>
+3. 副mesh ap， 重置开机，进去关dhcp，配置成mesh 副，然后将wan口连到主mesh ap 的lan口，等待主Ap上网络状态出现主副mesh连接<br>
+4. 关主mesh ap 的dhcp，插在wan的网线插到lan口；副mesh ap同样把原来插在wan口的网线插在lan口。</p>
+<p>分析：中兴这台E2633 组Mesh逻辑（其他品牌可能也类似），需要副Mesh Ap通过Wan口连到主Mesh的Lan口上，都开Mesh功能（默认开着）后自动或手动（手动似乎更快更确定些）确定主副Mesh后，过一会就建立起了Mesh关系，此后不再需要保持原来的连接条件。副MeshAp没有dhcp选项，但是dhcp还启作用，需要在其他模式下关闭dhcp，再切换到副meshAp的状态下。</p>
+<p>至此，一个既具备较强的内外网络管理功能和扩展能力，同时也能做Mesh无线漫游的家庭网络就搞定了，综合成本300以内，覆盖100多平（4个房间）。</p>
+<h2 id="参考">参考</h2>
+<p>[1]  <a target="_blank" rel="noopener" href="https://www.right.com.cn/forum/thread-8269476-1-1.html">E2633的mesh设置总结-新手入门及其它(硬件)-恩山无线论坛</a></p>
+<blockquote>
+<p>@hqiamman 7楼：我是用此方式mesh ：先是连接WAN连上MESH设置，显示主副。然后两个做AP，两个均lan接上级主路由桥接，关掉APDHCP，默认主路由开DHCP。正常使用</p>
+</blockquote>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="https://twitter.com/happydanye">
+            <span class="icon">
+              <i class="fab fa-twitter"></i>
+            </span>
+
+            <span class="label">Twitter</span>
+          </a>
+      </div>
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="https://t.me/+naBSux0lS9wwNThl">
+            <span class="icon">
+              <i class="fab fa-telegram"></i>
+            </span>
+
+            <span class="label">Telegram</span>
+          </a>
+      </div>
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+      </div>
+  </div>
+</div>
+
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/post/6f07/" rel="prev" title="升级版阅读方案-听书copy">
+                  <i class="fa fa-chevron-left"></i> 升级版阅读方案-听书copy
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/post/346a/" rel="next" title="极简极速极低成本家庭组网方案">
+                  极简极速极低成本家庭组网方案 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Jerome</span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">180k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">2:44</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="/lib/animejs/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+</body>
+</html>
