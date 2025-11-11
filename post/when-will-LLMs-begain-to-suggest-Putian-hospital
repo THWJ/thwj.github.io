@@ -23,27 +23,27 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"blog.jerryking.top","root":"/","images":"/","scheme":"Pisces","darkmode":true,"version":"8.17.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="我是Jerome，这里是我的数字个人花园，我会放一些笔记、想法和思考到这里，一方面方便自己学习思考和回顾，另一方面分享给感兴趣的朋友。另外我近期阅读的文章原文分享到这里：Jerome’s Clip，英文文章通过机翻做成双语，便于阅读。 短想法 | Jerome’s Blog是我的一些偶尔的灵感和想法 好物推荐 | Jerome’s Blog分享一些用过的不错的实体产品 软件和服务 | Jerome">
+    <meta name="description" content="我已经开始习惯使用大模型代替搜索引擎了。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="About This Blog">
-<meta property="og:url" content="https://blog.jerryking.top/post/2586/">
+<meta property="og:title" content="20251111-什么时候大模型开始推荐莆田医院？">
+<meta property="og:url" content="https://blog.jerryking.top/post/when-will-LLMs-begain-to-suggest-Putian-hospital">
 <meta property="og:site_name" content="Jerome&#39;s Blog">
-<meta property="og:description" content="我是Jerome，这里是我的数字个人花园，我会放一些笔记、想法和思考到这里，一方面方便自己学习思考和回顾，另一方面分享给感兴趣的朋友。另外我近期阅读的文章原文分享到这里：Jerome’s Clip，英文文章通过机翻做成双语，便于阅读。 短想法 | Jerome’s Blog是我的一些偶尔的灵感和想法 好物推荐 | Jerome’s Blog分享一些用过的不错的实体产品 软件和服务 | Jerome">
+<meta property="og:description" content="我已经开始习惯使用大模型代替搜索引擎了。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-07-26T02:34:57.000Z">
-<meta property="article:modified_time" content="2025-11-11T02:06:52.103Z">
+<meta property="article:published_time" content="2025-11-11T01:59:53.000Z">
+<meta property="article:modified_time" content="2025-11-11T01:59:53.000Z">
 <meta property="article:author" content="Jerome">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://blog.jerryking.top/post/2586/">
+<link rel="canonical" href="https://blog.jerryking.top/post/when-will-LLMs-begain-to-suggest-Putian-hospital">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://blog.jerryking.top/post/2586/","path":"post/2586/","title":"About This Blog"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://blog.jerryking.top/post/when-will-LLMs-begain-to-suggest-Putian-hospital","path":"/post/when-will-LLMs-begain-to-suggest-Putian-hospital","title":"20251111-什么时候大模型开始推荐莆田医院？"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>About This Blog | Jerome's Blog</title>
+<title>20251111-什么时候大模型开始推荐莆田医院？ | Jerome's Blog</title>
   
 
 
@@ -167,7 +167,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://blog.jerryking.top/post/2586/">
+    <link itemprop="mainEntityOfPage" href="https://blog.jerryking.top/post/when-will-LLMs-begain-to-suggest-Putian-hospital">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -180,12 +180,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="About This Blog | Jerome's Blog">
+      <meta itemprop="name" content="20251111-什么时候大模型开始推荐莆田医院？ | Jerome's Blog">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          About This Blog
+          20251111-什么时候大模型开始推荐莆田医院？
         </h1>
 
         <div class="post-meta-container">
@@ -196,14 +196,7 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2023-07-26 10:34:57" itemprop="dateCreated datePublished" datetime="2023-07-26T10:34:57+08:00">2023-07-26</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2025-11-11 10:06:52" itemprop="dateModified" datetime="2025-11-11T10:06:52+08:00">2025-11-11</time>
+      <time title="创建时间：2025-11-11 09:59:53" itemprop="dateCreated datePublished" datetime="2025-11-11T09:59:53+08:00">2025-11-11</time>
     </span>
 
   
@@ -219,7 +212,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>289</span>
+      <span>1.2k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -236,12 +229,17 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p>我是Jerome，这里是我的数字个人花园，我会放一些笔记、想法和思考到这里，一方面方便自己学习思考和回顾，另一方面分享给感兴趣的朋友。另外我近期阅读的文章原文分享到这里：<a target="_blank" rel="noopener" href="https://clip.jerryking.top/">Jerome’s Clip</a>，英文文章通过机翻做成双语，便于阅读。</p>
-<p><a href="https://blog.jerryking.top/post/e6fb.html">短想法 | Jerome’s Blog</a>是我的一些偶尔的灵感和想法<br>
-<a href="https://blog.jerryking.top/post/54ae.html">好物推荐 | Jerome’s Blog</a>分享一些用过的不错的实体产品<br>
-<a href="https://blog.jerryking.top/post/202509202205.html">软件和服务 | Jerome’s Blog</a>分享一些用过在用的不错的软件和在线服务<br>
-<a href="https://blog.jerryking.top/post/cdbd.html">书库书单 | Jerome’s Blog</a>分享一些读过和在读的图书</p>
-<p>@2023年08月27日 关闭了评论，建立了一个<a target="_blank" rel="noopener" href="https://t.me/+naBSux0lS9wwNThl">Telegram 群组</a>，如有需要，可以入群讨论反馈</p>
+    <div class="post-body" itemprop="articleBody"><p>我已经开始习惯使用大模型代替搜索引擎了。</p>
+<span id="more"></span>
+<p>以前遇到问题，打开浏览器，通过搜索引擎直接搜索，有合适的结果就打开对应的链接寻找问题的答案或线索，经常需要打开好多链接才能找到合适的、较为完整的结果。</p>
+<p>现在遇到问题，直接问Kimi，通常情况下Kimi都能给出很不错的回答（综合了多个网页），设计技术、代码类的问题，Kimi直接把配置、代码都能给出来，稍微改下就能用，大部分都可以直接得到正确的结果；有时错了，直接把错误输出贴给他，他马上就能指出错误的原因，给出调整后的方案。以前为了一个配置，一个错误，往往要搜上半天，现在几个对话就搞定了。</p>
+<p>大模型取代搜索引擎作为主要入口，已经指日可待了，只是时间的问题。普及度会逐步递增，可能会到60~80%的覆盖。搜索引擎当然还会存在，但是作为互联网入口的地位将让位给大模型，份额逐步下降。</p>
+<p>大模型如何盈利呢？搜索引擎主要依靠广告盈利，目前主流的全民互联网服务，本质上都是依靠流量变现(本质也是各种变种的广告)来盈利，面向公众服务的大模型，看来也难免要走这条路，那么，问题来了：会不会，或者说什么时候，在跟大模型对话的过程中，看到大模型推荐莆田医院？</p>
+<p>不要觉的这不可能，针对大模型的营销工作早已开展，目前主要还是间接的方式。OpenAI的回答中，此前大量引用了Reddit的内容，很多公司开始更加重视在Reddit上通过回答问题来进行营销，从而影响ChatGPT的回答结果。例如，Reddit上可能有这样一个话题：最好用的日程管理软件是什么？一家开发日程管理软件的公司，就会以用户的身份去回答这个问题，如果回答的好，获得了大量用户的点赞和评论，这个回答的内容，就可能备ChatGPT吸收到他的系统中，当有用户问ChatGPT类似的问题时，该公司的产品就可能成为ChatGPT推荐的产品之一。我最近在Kimi的推荐下，发现了好多好用的，在传统搜索模式下不太容易发现的App和软件。</p>
+<p>OpenAI最近引用来源的策略也频繁变化，跟搜索引擎一样，如果固定策略，很容易被广告主发现并利用，从而导致搜索结果/大模型推荐的内容全部都是广告，这样用户体验就很差了。</p>
+<p>沉迷于竞价排名的度娘就不怎么在乎了，直接把广告糊在用户脸上，短期看盈利上去了，长期看必然损害品牌形象。大模型这一波，度娘起的早，但目前感觉份额落后了，不能说没有形象拖累的因素。本来就下滑的搜索引擎份额，估计在大模型时代，还要继续掉一波。</p>
+<p>不过，用户在哪里，营销就要跟到哪里。在搜索引擎流量下降后，广告主们必然寻找新的流量，例如小红书，短视频；大模型后续必然会受到重视。大模型干净的日子，就如同早期的知乎，最后恐怕还是随着被营销攻陷而消失。</p>
+<p>大模型公司也需要盈利，借助广告进行流量变现无可厚非，希望能谨记魏则西事件的教训，把握好底线和尺度。毕竟老板们应该也不想在演讲台上吹着牛装着逼的时候，台下走上来一个年轻人把矿泉水倒在你头上，而舆论场上一片叫好声。</p>
 
     </div>
 
@@ -292,14 +290,11 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/post/6ce4/" rel="prev" title="我是如何理解AI的">
-                  <i class="fa fa-chevron-left"></i> 我是如何理解AI的
+                <a href="/post/how-to-overcome-the-smartphone-addiction/" rel="prev" title="如何戒掉手机成瘾？">
+                  <i class="fa fa-chevron-left"></i> 如何戒掉手机成瘾？
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/post/46f0/" rel="next" title="阅读笔记：李硕《翦商》">
-                  阅读笔记：李硕《翦商》 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
