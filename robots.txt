@@ -1,20 +1,12 @@
 User-agent: *
 Allow: /
 
-# 屏蔽低价值分页与重复尾斜杠
-Disallow: /page/
-Disallow: /page/*/    
+# 仅屏蔽带查询串的翻页、RSS、无用静态资源
+Disallow: /page/*/?*
 Disallow: */feed
 Disallow: /404.html
-
-# 继续屏蔽静态资源
-Disallow: /css/
-Disallow: /js/
-Disallow: /images/
 Disallow: /fonts/
-Disallow: /lib/
-
-# 如“关于”页无外链价值可保持屏蔽；若想留条内链，可删除下行
-Disallow: /about/
+Disallow: /images/emoji/
+Disallow: /lib/*.min.map
 
 Sitemap: https://blog.jerryking.top/sitemap.xml
