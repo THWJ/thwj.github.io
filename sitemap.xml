@@ -2,7 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.jerryking.top/post/Cycling_Travel_Log_20260114/</loc>
+    <loc>https://blog.jerryking.top/about/</loc>
+    
+    <lastmod>2026-01-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.jerryking.top/tags/</loc>
+    
+    <lastmod>2026-01-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.jerryking.top/categories/</loc>
     
     <lastmod>2026-01-15</lastmod>
     
@@ -13,16 +31,7 @@
   <url>
     <loc>https://blog.jerryking.top/post/about%20this%20blog/</loc>
     
-    <lastmod>2026-01-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.jerryking.top/post/good%20things%20recommend/</loc>
-    
-    <lastmod>2026-01-14</lastmod>
+    <lastmod>2026-01-15</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -31,7 +40,25 @@
   <url>
     <loc>https://blog.jerryking.top/post/booklists%20recommend/</loc>
     
-    <lastmod>2026-01-14</lastmod>
+    <lastmod>2026-01-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.jerryking.top/post/good%20things%20recommend/</loc>
+    
+    <lastmod>2026-01-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.jerryking.top/post/Cycling_Travel_Log_20260114/</loc>
+    
+    <lastmod>2026-01-15</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -754,6 +781,13 @@
   </url>
   
   <url>
+    <loc>https://blog.jerryking.top/tags/%E9%AA%91%E8%A1%8C/</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.jerryking.top/tags/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -776,13 +810,6 @@
   
   <url>
     <loc>https://blog.jerryking.top/tags/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0-%E5%8E%86%E5%8F%B2/</loc>
-    <lastmod>2026-01-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.jerryking.top/tags/%E9%AA%91%E8%A1%8C/</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

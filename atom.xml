@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Jerome&#39;s Blog</title>
-  <icon>https://blog.jerryking.top/icon.png</icon>
+  <icon>https://blog.jerryking.top/images/favicon-32x32-next.png</icon>
   <subtitle>Jerome的日常随想</subtitle>
   <link href="https://blog.jerryking.top/atom.xml" rel="self"/>
   
