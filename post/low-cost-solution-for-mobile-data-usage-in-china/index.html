@@ -23,12 +23,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"blog.jerryking.top","root":"/","images":"/","scheme":"Pisces","darkmode":true,"version":"8.17.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Update20251110:  几乎可以肯定，运营商为了促销5G，对4g进行了限速（各地视资源情况还有所不同），4g卡和设备的速率远低于4g理论速率，也低于5G上线之前的4g正常速率 根据广大网友的反馈，运营商不同渠道、等级的卡，有速率区别（签约速率），低资费的卡（例如普通物联网卡），等级较低，资源不足时可能被限速 目前运营商正规大流量卡（可以插在手机上的）基本没有低于29元&#x2F;月的，大量号称19">
+    <meta name="description" content="TLDR： 1. 首推大厂（中兴、华为）的5G随身wifi（例如中兴u30air，300多）。不过目前都没有低价小流量套餐了，基本要29元&#x2F;月以上了。 2. 其次手机+正规运营商的卡（例如广东电信星卡，29元&#x2F;200G&#x2F;月）（正规卡基本没有低于29的，有一些店铺赠送做到19，9的，往往都是头几个月送，后面恢复原价），最便宜的正规卡应该是广电的惠民卡（广电在部分地区（例如江苏）被限速的非常厉害，基本">
 <meta property="og:type" content="article">
 <meta property="og:title" content="移动上网解决方案总结">
 <meta property="og:url" content="https://blog.jerryking.top/post/low-cost-solution-for-mobile-data-usage-in-china/">
 <meta property="og:site_name" content="Jerome&#39;s Blog">
-<meta property="og:description" content="Update20251110:  几乎可以肯定，运营商为了促销5G，对4g进行了限速（各地视资源情况还有所不同），4g卡和设备的速率远低于4g理论速率，也低于5G上线之前的4g正常速率 根据广大网友的反馈，运营商不同渠道、等级的卡，有速率区别（签约速率），低资费的卡（例如普通物联网卡），等级较低，资源不足时可能被限速 目前运营商正规大流量卡（可以插在手机上的）基本没有低于29元&#x2F;月的，大量号称19">
+<meta property="og:description" content="TLDR： 1. 首推大厂（中兴、华为）的5G随身wifi（例如中兴u30air，300多）。不过目前都没有低价小流量套餐了，基本要29元&#x2F;月以上了。 2. 其次手机+正规运营商的卡（例如广东电信星卡，29元&#x2F;200G&#x2F;月）（正规卡基本没有低于29的，有一些店铺赠送做到19，9的，往往都是头几个月送，后面恢复原价），最便宜的正规卡应该是广电的惠民卡（广电在部分地区（例如江苏）被限速的非常厉害，基本">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-08-08T16:00:00.000Z">
 <meta property="article:modified_time" content="2025-09-30T13:30:19.000Z">
@@ -132,7 +132,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">79</span>
+          <span class="site-state-item-count">80</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -217,7 +217,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>4.5k</span>
+      <span>4.6k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -234,7 +234,15 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p><strong>Update20251110</strong>:</p>
+    <div class="post-body" itemprop="articleBody"><p><strong>TLDR</strong>：<br>
+1. 首推大厂（中兴、华为）的5G随身wifi（例如中兴u30air，300多）。不过目前都没有低价小流量套餐了，基本要29元/月以上了。<br>
+2. 其次手机+正规运营商的卡（例如广东电信星卡，29元/200G/月）（正规卡基本没有低于29的，有一些店铺赠送做到19，9的，往往都是头几个月送，后面恢复原价），最便宜的正规卡应该是广电的惠民卡（广电在部分地区（例如江苏）被限速的非常厉害，基本没法用）<br>
+3. 大厂（例如中兴、华为）的可插卡的随身wifi（例如中兴2f32 pro）+小鲸卡。设备4g的便宜，5g的贵。小鲸卡的好处是有小套餐，流量要求不高的话，小套餐更灵活。但是 2.4Ghz的wifi频段干扰严重，对稳定性有要求的，把F32 pro用线插在设备上（手机或平板）</p>
+<p>其他的基本都是骗。（有个舒适盾的产品，知乎上有人推荐，说大学生创业，产品看起来比较朴素，客服也比较冷淡，可能是正经产品，不过不支持typec充电）</p>
+<span id="more"></span>
+<p><strong>Update20260120：</strong><br>
+又入了一个华硕adol，支持5Ghz wifi频段，闲鱼买的破解版，可以改串插小鲸卡，5G wifi频段确实稳很多，有屏幕，开机信息和信号信息也比较清晰。但是今天户外使用突然满电关机，不知道是什么原因，再观察一下。</p>
+<p><strong>Update20251110</strong>:</p>
 <ol>
 <li>几乎可以肯定，运营商为了促销5G，对4g进行了限速（各地视资源情况还有所不同），4g卡和设备的速率远低于4g理论速率，也低于5G上线之前的4g正常速率</li>
 <li>根据广大网友的反馈，运营商不同渠道、等级的卡，有速率区别（签约速率），低资费的卡（例如普通物联网卡），等级较低，资源不足时可能被限速</li>
@@ -297,14 +305,8 @@
 </tr>
 </tbody>
 </table>
-<p><strong>TLDR</strong>：<br>
-1. 首推大厂（中兴、华为）的5G随身wifi（例如中兴u30air，300多）。不过目前都没有低价小流量套餐了，基本要29元/月以上了。<br>
-2. 其次手机+正规运营商的卡（例如广东电信星卡，29元/200G/月）（正规卡基本没有低于29的，有一些店铺赠送做到19，9的，往往都是头几个月送，后面恢复原价），最便宜的正规卡应该是广电的惠民卡（广电在部分地区（例如江苏）被限速的非常厉害，基本没法用）<br>
-3. 大厂（例如中兴、华为）的可插卡的随身wifi+小鲸卡。设备4g的便宜，5g的贵。小鲸卡的好处是有小套餐，流量要求不高的话，小套餐更灵活。</p>
-<p>其他的基本都是骗。（有个舒适盾的产品，知乎上有人推荐，说大学生创业，产品看起来比较朴素，客服也比较冷淡，可能是正经产品，不过不支持typec充电）</p>
 <p>@2025年09月30日  最近我从京东自营购入中国电信流量卡，用5G手机开热点当wifi。我发现，访问我的家庭服务器（移动家宽）时，网速只有20kb，经网络搜索，是中国移动对电信和联通的上行流量进行了限速。我用流量卡的最初原因就是在面可以远程家里的电脑，看来一定要跟家宽同网。移动的家宽便宜流量卡贵，电信的流量卡便宜家宽贵，nnd。</p>
 <p>@2025-02-27 14:35:40  我又上当了，这次还是苏宁易购。看来这个牌子跟飞利浦、永久、凤凰一样，卖给骗子们割韭菜了。之前不是随身wifi限速死慢吗，我考虑买个流量卡装手机里总可以了吧。苏宁易购有个9.9包40G的流量卡，也是用的时候充。郑州发货，到家装个app要充值至少50块，我又不傻，网上随便一搜，全是差评，感情还是随身wifi那一套啊。随身wifi、流量卡这个领域基本可以肯定全是骗子了。除非真正的运营商产品和大厂产品。（注意那些打着运营商旗号和擦边大厂的产品，也都是骗子）</p>
-<span id="more"></span>
 <p>@2024-12-19 10:25:26  写了一堆废物，本文作为警醒。上个月手机流量不太够，把之前买的随身wifi拿出来，便宜的套餐找不到了，买个了9.9的套餐想凑合用，网速慢到要死。也就是说，去云控依然解决不了网速问题。刚需还是买中兴的u30air吧。</p>
 <p>以下内容作废，请勿参考。</p>
 <p>之前写了家庭网络方案：<a href="https://blog.jerryking.top/post/Minimalist-Ultra-fast-Ultra-low-cost-Home-Networking-Solution/">极简极速极低成本家庭组网方案 | Jerome’s Blog</a> ，人不会总呆在家里和有wifi的地方。尤其是经常要出差的人，需要考虑非家和办公室环境的上网方案。<br>
@@ -415,13 +417,13 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">221k</span>
+    <span title="站点总字数">223k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">3:21</span>
+    <span title="站点阅读时长">3:23</span>
   </span>
 </div>
 <div class="busuanzi-count">

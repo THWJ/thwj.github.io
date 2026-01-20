@@ -53,9 +53,27 @@
   </entry>
   
   <entry>
+    <title>影音娱乐方案-中庸之道</title>
+    <link href="https://blog.jerryking.top/post/Video-Entertainment-Solution-The-Middle-Way/"/>
+    <id>https://blog.jerryking.top/post/Video-Entertainment-Solution-The-Middle-Way/</id>
+    <published>2026-01-07T06:35:30.000Z</published>
+    <updated>2026-01-07T06:35:30.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>耳朵是木耳，视频1080P就满足了，成本不高，使用方便，欢迎抄作业。</p><p>基本实现随时随地看任何高清1080p视频资源，听任何音乐资源。一次性投入约500元，后续每月支出不超过25元。</p><span id="more"></span><h2 id="TLDR：">TLDR：</h2><p>硬件：二手低配白群晖、C92小主机<br>通信：家宽、随身wifi<br>软件：网易爆米花、transmission、smartube、Bv、小猫<br>网络服务：域名、vps、pikpak、电报、免费网盘（天翼、移动）、机场、pt、bt</p><h2 id="成本">成本</h2><p>固定投资：<br>二手白群晖：150<br>二手硬盘：1T 150 （500G也能凑合用）<br>4G随身wifi ZTE F32 Pro：60元<br>C92小主机：100元<br>安卓盒子：70元<br>合计：460元</p><p>月/年费：<br>香港Vps：80/年  30m，折合7元/月<br>小鲸卡：5.9/月<br>电费：100元/年，折合8元/月<br>域名：30/年，折合3元/月<br>科学上网：1块/月<br>合计：25元/月</p><p>非必要：<br>pt账号：免费或者200多块</p><p>不计算在内：<br>手机、家宽、路由器、交换机、电视机、显示器、平板、音箱、耳机等等</p><p>上述成本很多还可以和别的目的共用，成本可以平摊</p><h2 id="正文">正文</h2><h3 id="具体方案和说明">具体方案和说明</h3><p>有什么新片出来，就用手机到pt上搜一下，把种子下下来，通过手机transmission客户端提交到服务器下载。一般<strong>个把小时</strong>就下载好了。也可以网盘搜索转存。网易爆米花上刷新一下就有了，看完就删除。老片什么时候想看什么时候下载。家里用电视、盒子+显示器等播放；到外面就用手机或平板播放，播放记录同步，平滑过渡。</p><h4 id="视频">视频</h4><p>客户端用<strong>网易爆米花</strong>看电影和电视剧，支持多平台，可以同步播放记录，电视墙，支持webdav，可谓完美</p><p>家里4K电视基本不开，主要在书房用第二显示器看视频，懒得开电脑，最近买了一个安卓盒子，装了<strong>BV</strong>和<strong>smartube</strong>，本地和在线都有了，手机Revanced好用。</p><h4 id="音乐">音乐</h4><p>耳机听音乐的话，用<strong>salt</strong>播放音乐，本地为主，想听的歌随时从服务器上下载；有个wifi音箱，用<strong>BubbleUpPnP</strong>给其播放音乐(折腾过roon，其实用不着)。wifi音箱有个优点，任意一个终端都可以控制它，不用像蓝牙那样需要切换蓝牙。</p><h4 id="网络">网络</h4><p>网络需要折腾一下，因为想实现室内户外都可以使用一个资源库（视频、音乐库），视频播放记录可以同步（在家看一半，到外面可以直接从中断的地方看起）。</p><p>由于中国特色的网络政策，家宽的上行功能受到很大的限制，我曾以为<strong>ipv6</strong>是解决之道，但是网间互联<strong>qos</strong>够狠。因此购买了一个香港<strong>vps</strong>，30m带宽。</p><p>为了安全，购买便宜的<strong>域名</strong>，群晖开启<strong>webdav</strong>，我另外用一台<strong>c92小主机</strong>开<strong>nginx反代</strong>+ssl（用<strong>acme</strong>自动续证书），除了webdav，transmission也反代了，这样就可以在外用手机指示服务器下载。另外用一台小主机的原因是群晖系统限制多，折腾起来麻烦；并且尽量不在群晖上开额外的服务，群晖就可以选择最便宜的机型。把域名解析到vps，vps上启动<strong>Frp</strong>服务端，家里小主机启动frp客户端，开放443端口。</p><p>在家中的路由器上<strong>挟持</strong>该域名解析到内网ip。（用的是openwrt路由器，如果路由器没有劫持功能的话，可以在小主机上安装adguard之类的服务，把主dns指向这个）</p><p><strong>在外移动流量</strong>：折腾了一大圈，<strong>中兴F32 Pro+ 小鲸卡</strong>是满足本方案需求的最佳方案。如果不追求这么节省的话，一张29元/185G流量的电信卡就更好了。</p><h4 id="资源">资源</h4><p>片源主要靠pt（群晖安装transmission），只下1080p的，以小体积优先。720p一般不考虑，4k如果体积不大也可以。（没有pt的，其实bt也够了，或者随便注册一个小站，热门资源和经典资源都有的)。</p><p>运营商（例如移动云盘）免费给了几十G的空间，<a href="https://www.91panta.com/">盘Ta-云盘资源共享站</a>上资源也挺多的，有<strong>夸克</strong>的话就更好了，这个资源目前最多。但是网易爆米花不直接支持，需要折腾alist。（这点就挺有意思的，网易爆米花支持了这么多云盘，就是不支持资源最多的夸克，为什么？）</p><p>有些资源pt没有，网盘没有，只有没流量的bt，这时候用<strong>pikpak</strong>免费额度就可以了（需要科学上网）。</p><p>音乐从<a href="https://pjmp3.com/">泡椒音乐 - 免费无损音乐MP3、FLAC、WAV在线播放下载网站</a>下载，当然，pt站上大量的专辑cd，根本下不完。</p><p><strong>the dark corner</strong> 科学上网后，资源是无限的，有限的是个人的营养快线。一般在线就够了，有些可以用电报，最后还有pikpak托底。如果年轻气盛一定要囤高清，买个馒头。</p><h3 id="随便聊聊">随便聊聊</h3><p>moontv和decotv，<strong>聚合影视资源</strong>服务，docker一键部署，不需要自己存储，看起来方便，但是资源不稳定，<strong>卡顿</strong>，很多资源<strong>不清晰</strong>，基本没有1080p的流畅资源。</p><p>本文冠以中庸之道，就是区别于那些4k蓝光原盘杜比视界的极致效果之道，以及decotv之类随便看看的路子，在成本和效果之间取一个适合普通人的中庸之路，这应该是大多数人的偏好吧？</p><h2 id="结语">结语</h2><p>本文有不少“术语”，没有额外的解释，因为AI时代，有兴趣问下AI就知道了，没兴趣你为啥看到这里？</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;耳朵是木耳，视频1080P就满足了，成本不高，使用方便，欢迎抄作业。&lt;/p&gt;
+&lt;p&gt;基本实现随时随地看任何高清1080p视频资源，听任何音乐资源。一次性投入约500元，后续每月支出不超过25元。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>老罗、运营商和数字游戏</title>
-    <link href="https://blog.jerryking.top/post/Mr%20Luo%20Operator%20and%20Marketing%20gimmick/"/>
-    <id>https://blog.jerryking.top/post/Mr%20Luo%20Operator%20and%20Marketing%20gimmick/</id>
+    <link href="https://blog.jerryking.top/post/Mr-Luo-Operator-and-Marketing-gimmick/"/>
+    <id>https://blog.jerryking.top/post/Mr-Luo-Operator-and-Marketing-gimmick/</id>
     <published>2025-12-24T07:02:13.000Z</published>
     <updated>2025-12-24T07:02:13.000Z</updated>
     
@@ -71,8 +89,8 @@
   
   <entry>
     <title>装装样我只是装装样</title>
-    <link href="https://blog.jerryking.top/post/putting%20on%20an%20act/"/>
-    <id>https://blog.jerryking.top/post/putting%20on%20an%20act/</id>
+    <link href="https://blog.jerryking.top/post/putting-on-an-act/"/>
+    <id>https://blog.jerryking.top/post/putting-on-an-act/</id>
     <published>2025-11-24T03:07:22.000Z</published>
     <updated>2025-11-24T03:07:22.000Z</updated>
     
@@ -338,23 +356,6 @@
     
     
     <summary type="html">&lt;p&gt;某人的那句“机场那两个大脑袋”，算是帮一部分人道出了心声。&lt;/p&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>昨夜西风凋敝树</title>
-    <link href="https://blog.jerryking.top/post/Reading-Notes-The-Articles-Of-XiFeng/"/>
-    <id>https://blog.jerryking.top/post/Reading-Notes-The-Articles-Of-XiFeng/</id>
-    <published>2025-09-22T03:19:23.000Z</published>
-    <updated>2025-09-22T03:19:23.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>最近抽空把西风今年的收费文章看完了，包括他最近对西贝事件的点评。</p><span id="more"></span><p>西风对我最大的启发，是看事儿的”隐学“的角度。</p><p>西风的”隐学“其实并没有多深奥，主要是官方近20年的教育，一小半是在各种角度批判”隐学“，所以大学生们看起来都”学傻了“。再看西风的文章，不由得生出一种：原来是这样。。。的感慨和感悟。我在看他的文章的时候，经常想起年轻时候，有一阵子批判”精致的利己主义者“，说的不就是西风的这种思想吗？</p><p>世界是在两极之间来回的，当一个国家上层满是”精致利己者“时（明末的朱家和东林；清末的满族勋贵和汉人文官大吏），国家亡了，重新洗牌；隐学不显，公学当道，精致利己者少了（家族传承断了），社会爆发巨大的生产力，保留了传承的家族和当权者（当权久了肯定能自悟）获得了巨大的利益；但毕竟还有人在，思想或多或少还是传下来，传出来了，大家经过社会的毒打，慢慢也都会学乖的，时间久了只好再次洗牌。</p><p>纵观西风的这一套”隐学“，理解并不难，但是学起来很难，尤其是在家族没法托举的情况下，需要很高的”算力“：一方面，你要应对上位者所部的防线，比如用学位、成绩（政绩）来作为上升的凭证；另一方面，你还要懂人心，会算计，表面一套，背后一套，这需要大脑有足够的算力来支撑，两套系统需要两套算力；另外，很多人还要面临长期教育带来的道德评价冲突。想要脱颖而出，实在困难；能冲出来的，大概率是人中龙凤了。</p><p>最近还看了油管上一个讲本山的视频，本山评价他的徒弟们：”很多是带艺投师，本身很有能力，当面一套，背后一套玩的很溜“。但是本山的徒弟们大多文化水平不高。也就是说，当代社会，如果一个人能同时考入985拿到本硕文凭，同时又能把当面一套，背后一套玩儿炉火纯青，那就是西风这样的大能。而大量的小镇做题家，耗尽的大部分心力，只获得了文凭；一些社会底层的能人，学会了当面一套背后一套，但是没有文凭，在这个成熟的社会，很难进入行业的顶层。</p><p>西风公布了他念叨了好多年的捡乌龙指的方法，果然跟群友们猜测的大差不差，搞笑的是西风并没有靠这个赚起步的钱，只是验证的自己的想法。这真TMD的像玄幻小说上来给你挖了个神坑，装了一本书的逼，最后拉了坨大的填了坑。</p><p>西风对于西贝事件的说法，让我一开始大呼极有道理。但是当我将西风的观点发到某个论坛上时（那里看西风的人应该不多，没有滤镜和被驯化过的思维），绝大部分人并不认可，还有人说是阴谋论，这让我有点清醒。西风的出发点是像贾老板这种创业几十年的人，IPO当前，不可能控制不住情绪，大概率是IPO遇上过不去的坎，故意做局推卸责任；网友们的观点是，世界是个草台班子，贾老板是真飘了。这种自插20刀的做法哪里是推卸责任，这明明是狂揽责任好吧？</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;最近抽空把西风今年的收费文章看完了，包括他最近对西贝事件的点评。&lt;/p&gt;</summary>
     
     
     
