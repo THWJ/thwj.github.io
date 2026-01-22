@@ -4,7 +4,7 @@
   <url>
     <loc>https://blog.jerryking.top/post/about-this-blog/</loc>
     
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-01-22</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -13,7 +13,7 @@
   <url>
     <loc>https://blog.jerryking.top/post/booklists-recommend/</loc>
     
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-01-22</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -22,7 +22,7 @@
   <url>
     <loc>https://blog.jerryking.top/post/thoughts/</loc>
     
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-01-22</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -31,7 +31,16 @@
   <url>
     <loc>https://blog.jerryking.top/post/good-things-recommend/</loc>
     
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-01-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.jerryking.top/post/Ultimate-Solution-for-Prolonged-Sitting-at-Work/</loc>
+    
+    <lastmod>2026-01-22</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -751,7 +760,7 @@
 
   <url>
     <loc>https://blog.jerryking.top/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-01-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -759,7 +768,7 @@
   
   <url>
     <loc>https://blog.jerryking.top/tags/%E9%AA%91%E8%A1%8C/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
